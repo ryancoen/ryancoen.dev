@@ -111,7 +111,7 @@ font-style: normal;
 }
 
 #logopic{
-	position: relative;
+	position: fixed;
 	display: block;
 	z-index: 20;
 	top: 5px;
@@ -156,3 +156,4 @@ h1{
 p{
 	color: black;
 }
+
