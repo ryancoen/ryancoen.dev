@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	 box-sizing: border-box;
+}
+
+#logopic{
+	position: relative;
+	display: block;
+	z-index: 20;
+	top: 5px;
+	left: 5;
+}
+
+#welcomebox{
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+}
+
+#footer{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 130px;
+	position: fixed;
+  left: 0;
+  bottom: 0;
+	font-size: 15px;
+}
+
+#social{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.socialfooter:hover{
+	background: linear-gradient(18deg, rgba(139,212,175,1) 0%, rgba(216,229,168,1) 100%);
+	border-radius: 50px;
+	 filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+h1{
+	color: black;
+}
+
+p{
+	color: black;
+}
+
+#profile{
+	position: relative;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+ 
