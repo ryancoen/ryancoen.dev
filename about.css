@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1{
+	font-family: atten-new,sans-serif;
+font-weight: 300;
+font-style: normal;
+
+}
+
+p{
+	font-family: atten-new,sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+#para{
+	width: 640px;
+	min-width: 640px;
+}
+
+#list{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.projects{
+	list-style-type: circle;
+	font-family: atten-new,sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+#profilepic{
+	border-radius: 300px;
+	height: 400px;
+	padding: 50px;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+}
+
+#topprof{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px;
+}
+
+#container{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(18deg, rgba(166,43,80,1) 0%, rgba(39,26,87,1) 100%);
+	color: white;
+	
+}
+
+#container2{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #333333
+}
+
+#barz{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 450px;
+	padding: 20px;
+	width: 60%;
+	min-width: 700px;
+}
+
+.year{
+	white-space: nowrap;
+	color: white;
+	font-family: atten-new,sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.bar{
+	left: 100px;
+}
+
+.bar-one{
+	display: flex;
+}
+
+.bar-graph .year {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  opacity: 0;
+	flex-direction: row;
+}
+
+.bar-graph-horizontal {
+  max-width: 93%;
+}
+
+.bar-graph-horizontal > div {
+  float: left;
+  margin-bottom: 8px;
+  width: 90%;
+}
+
+.bar-graph-horizontal .year {
+  float: left;
+  margin-top: 18px;
+  width: 50px;
+}
+
+.bar-graph-horizontal .bar {
+  border-radius: 3px;
+  height: 55px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 0;
+}
+
+.bar-graph-one .bar::after {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  color: #fff;
+  content: attr(data-percentage);
+  font-weight: 700;
+  position: absolute;
+  right: 16px;
+  top: 17px;
+}
+
+.bar-graph-one .bar-one .bar {
+  background-color: #A52A51;
+  -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+  -moz-animation: show-bar-one 1.2s 0.1s forwards;
+  animation: show-bar-one 1.2s 0.1s forwards;
+}
+
+.bar-graph-one .bar-two .bar {
+  background-color: #A52A51;
+  -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+  -moz-animation: show-bar-two 1.2s 0.2s forwards;
+  animation: show-bar-two 1.2s 0.2s forwards;
+}
+
+.bar-graph-one .bar-three .bar {
+  background-color: #A52A51;
+  -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+  -moz-animation: show-bar-three 1.2s 0.3s forwards;
+  animation: show-bar-three 1.2s 0.3s forwards;
+}
+
+.bar-graph-one .bar-four .bar {
+  background-color: #A52A51;
+  -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+  -moz-animation: show-bar-four 1.2s 0.4s forwards;
+  animation: show-bar-four 1.2s 0.4s forwards;
+}
+
+.bar-graph-one .bar-five .bar {
+  background-color: #A52A51;
+  -webkit-animation: show-bar-five 1.2s 0.5s forwards;
+  -moz-animation: show-bar-five 1.2s 0.5s forwards;
+  animation: show-bar-five 1.2s 0.5s forwards;
+}
+
+.bar-graph-one .bar-six .bar {
+  background-color: #A52A51;
+  -webkit-animation: show-bar-six 1.2s 0.6s forwards;
+  -moz-animation: show-bar-six 1.2s 0.6s forwards;
+  animation: show-bar-six 1.2s 0.6s forwards;
+}
+
+.bar-graph-one .bar-seven .bar {
+  background-color: #A52A51;
+  -webkit-animation: show-bar-seven 1.2s 0.7s forwards;
+  -moz-animation: show-bar-seven 1.2s 0.7s forwards;
+  animation: show-bar-seven 1.2s 0.7s forwards;
+}
+
+
+/* Bar Graph Horizontal Animations */
+@-webkit-keyframes show-bar-one {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@-webkit-keyframes show-bar-two {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes show-bar-three {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes show-bar-four {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes show-bar-five {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes show-bar-six {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes show-bar-seven {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+
+@-webkit-keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

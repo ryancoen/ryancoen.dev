@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#container{
+	background: #333333;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+}
+
+#topimage{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+}
+
+h1, h3, p{
+	color: white;
+	font-family: atten-new,sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+h1, h3{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#para{
+	width: 50%;
+	min-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+}
+
+#key{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 

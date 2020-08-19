@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+.banner {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  position: relative;
+}
+#topimage {
+  position: absolute;
+  width: 300px;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+#article {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-family: atten-new, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}

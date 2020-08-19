@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1{
+	font-family: atten-new,sans-serif;
+font-weight: 1000;
+font-style: normal;
+
+}
+
+
+#list{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.projects{
+	list-style-type: circle;
+	font-family: atten-new,sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+#divider{
+	width: 50%;
+	height: 5px;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.link2{
+	font-family: atten-new,sans-serif;
+font-weight: 300;
+font-style: normal;
+}
