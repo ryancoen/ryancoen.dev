@@ -69,7 +69,7 @@ font-style: normal;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	height: 450px;
+	height: 500px;
 	padding: 20px;
 	width: 60%;
 	min-width: 700px;
@@ -136,57 +136,72 @@ font-style: normal;
   top: 17px;
 }
 
+.bar-graph-one .bar-zero .bar {
+  background-color: #A52A51;
+  -webkit-animation: show-bar-zero 1.2s 0.1s forwards;
+  -moz-animation: show-bar-zero 1.2s 0.1s forwards;
+  animation: show-bar-zero 1.2s 0.1s forwards;
+}
+
 .bar-graph-one .bar-one .bar {
   background-color: #A52A51;
-  -webkit-animation: show-bar-one 1.2s 0.1s forwards;
-  -moz-animation: show-bar-one 1.2s 0.1s forwards;
-  animation: show-bar-one 1.2s 0.1s forwards;
+  -webkit-animation: show-bar-one 1.2s 0.2s forwards;
+  -moz-animation: show-bar-one 1.2s 0.2s forwards;
+  animation: show-bar-one 1.2s 0.2s forwards;
 }
 
 .bar-graph-one .bar-two .bar {
   background-color: #A52A51;
-  -webkit-animation: show-bar-two 1.2s 0.2s forwards;
-  -moz-animation: show-bar-two 1.2s 0.2s forwards;
-  animation: show-bar-two 1.2s 0.2s forwards;
+  -webkit-animation: show-bar-two 1.2s 0.3s forwards;
+  -moz-animation: show-bar-two 1.2s 0.3s forwards;
+  animation: show-bar-two 1.2s 0.3s forwards;
 }
 
 .bar-graph-one .bar-three .bar {
   background-color: #A52A51;
-  -webkit-animation: show-bar-three 1.2s 0.3s forwards;
-  -moz-animation: show-bar-three 1.2s 0.3s forwards;
-  animation: show-bar-three 1.2s 0.3s forwards;
+  -webkit-animation: show-bar-three 1.2s 0.4s forwards;
+  -moz-animation: show-bar-three 1.2s 0.4s forwards;
+  animation: show-bar-three 1.2s 0.4s forwards;
 }
 
 .bar-graph-one .bar-four .bar {
   background-color: #A52A51;
-  -webkit-animation: show-bar-four 1.2s 0.4s forwards;
-  -moz-animation: show-bar-four 1.2s 0.4s forwards;
-  animation: show-bar-four 1.2s 0.4s forwards;
+  -webkit-animation: show-bar-four 1.2s 0.5s forwards;
+  -moz-animation: show-bar-four 1.2s 0.5s forwards;
+  animation: show-bar-four 1.2s 0.5s forwards;
 }
 
 .bar-graph-one .bar-five .bar {
   background-color: #A52A51;
-  -webkit-animation: show-bar-five 1.2s 0.5s forwards;
-  -moz-animation: show-bar-five 1.2s 0.5s forwards;
-  animation: show-bar-five 1.2s 0.5s forwards;
+  -webkit-animation: show-bar-five 1.2s 0.6s forwards;
+  -moz-animation: show-bar-five 1.2s 0.6s forwards;
+  animation: show-bar-five 1.2s 0.6s forwards;
 }
 
 .bar-graph-one .bar-six .bar {
   background-color: #A52A51;
-  -webkit-animation: show-bar-six 1.2s 0.6s forwards;
-  -moz-animation: show-bar-six 1.2s 0.6s forwards;
-  animation: show-bar-six 1.2s 0.6s forwards;
+  -webkit-animation: show-bar-six 1.2s 0.7s forwards;
+  -moz-animation: show-bar-six 1.2s 0.7s forwards;
+  animation: show-bar-six 1.2s 0.7s forwards;
 }
 
 .bar-graph-one .bar-seven .bar {
   background-color: #A52A51;
-  -webkit-animation: show-bar-seven 1.2s 0.7s forwards;
-  -moz-animation: show-bar-seven 1.2s 0.7s forwards;
-  animation: show-bar-seven 1.2s 0.7s forwards;
+  -webkit-animation: show-bar-seven 1.2s 0.8s forwards;
+  -moz-animation: show-bar-seven 1.2s 0.8s forwards;
+  animation: show-bar-seven 1.2s 0.8s forwards;
 }
 
 
 /* Bar Graph Horizontal Animations */
+@-webkit-keyframes show-bar-zero {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
 @-webkit-keyframes show-bar-one {
   0% {
     width: 0;
