@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>All-in-One macOS Recovery | ryancoen.dev</title>
+<link rel="stylesheet" type="text/css" href="../CSS/All-In-One-Mac-Recovery.css">
+<link rel="stylesheet" type="text/css" href="../CSS/unv.css">
+<link rel="stylesheet" href="https://use.typekit.net/ynh7syw.css">
+</head>
+<nav id="navigation"><a href="../HTML/index.html" class="logo">RYANCOEN.DEV</a>
+  <ul class="links">
+    <li class="dropdown"><a href="../HTML/directory.html" class="trigger-drop">Projects</a>
+      <ul class="drop">
+        <li><a href="#">Code</a></li>
+        <li><a href="#">Gaming</a></li>
+        <li><a href="#">Apple</a></li>
+        <li><a href="#">Tech Support/FAQ</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="../HTML/directory.html">All</a></li>
+      </ul>
+    </li>
+    <li class="dropdown"><a href="../HTML/music.html" class="trigger-drop">Music</a>
+    <li><a href="../HTML/about.html">About</a></li>
+    </li>
+  </ul>
+</nav>
+<a href="../HTML/index.html"><img src="../Images/logo.png"  width="135" height="135" id="logopic" alt=""/></a>
+<body>
+<div id="article">
+  <h2 align="">All-In-One Mac Recovery Drive [Guide]</h2>
+  <h5>Updated: 08/06/2020</h5>
+  <img id="topimage" src="../Images/applelogo.png"  alt=""/>
+  <h3>What is an All-in-One Recovery Drive? </h3>
+  <p>If you’re like me and you spend a lot of your time repairing, upgrading, reinstalling or imaging Macs, it can be very time consuming to search for installer files and create USB recovery drives for your particular machine, not to mention including all of tools you may need for a job.  An All-in-one recovery drive is meant to simplify this process and give you multiple ways of tackling a problem when you don’t have access to the onboard OS. Using an external recovery drive can assist in tasks such as data recovery, OS upgrading, diagnostics, and much more. In this guide I will show you how to create a drive like this to add to your computer repair toolset. </p>
+  <h3>What you'll need: </h3>
+  <ul class="list">
+    <li>128GB Flash Drive/External SSD</li>
+    <li>DMGs or macOS Installers (10.6-Current)</li>
+    <li>A real Mac</li>
+    <li>DiskMaker X</li>
+    <li>Carbon Copy Cloner or TechTool Pro 11 (optional)</li>
+  </ul>
+  <h3>Scenarios where you may need an external recovery drive: </h3>
+  <ul class="list">
+    <li>Your Mac failed a recent software update and you would like to attempt an in-place install of the operating system</li>
+    <li>You suspect you may have failing hardware and would like to boot to another enviroment. Sometimes the Apple On-board diagnostics do not tell the whole story.</li>
+    <li>Your mac is unable to boot to its OS and you want to attempt non-invasive data recovery.</li>
+    <li>You need to manually remove some pesky malware/adware</li>
+  </ul>
+  <h3>Downloading MacOS</h3>
+  <img class="imgcenter" src="../Images/Screen Shot 2020-10-28 at 3.11.59 PM.png" width="800px" alt="AppStore"/>
+  <p>Depending on your use case, the versions of MacOS that you'll need may vary. I chose to get everything from 10.6-Current (Catalina). There are a few methods for obtaining copies of MacOS. </p>
+  <ol class="list">
+    <li><b>Install Homebrew:</b> In my opinion, this is probably the easiest way to obtain old versions of MacOS. I've linked to a different guide for this <a href="http://blog.greggant.com/posts/2018/05/11/download-old-versions-of-macos-osx-legally.html"><em>here.</em></a></li>
+    <li><b>Download from the Apple App Store:</b> This option cna be tricky. One, not all of the operating systems are available and many of them can only be downloaded if you have downloaded them in the past. A good option for those who have kept up to date with every major release through the App Store have have it linked to their Apple ID.</li>
+    <li><b>Physical Media:</b> For some older OS, you'll need to obtain an older install media, such as the USB verison of Snow Leopard 10.6 that Apple sells for about $20. Most people will not need to go back to an old OS like this though.</li>
+  </ol>
+  <h3>Dividing your drive </h3>
+  <img class="imgcenter" src="../Images/Screen Shot 2020-10-08 at 10.01.11 PM.png" width="800px" alt="Partition Sizes"/>
+  <p>Depending on the operating systems you want access to, you'll need to divide your drive accordingly. In this example, I am using a 120GB external SSD and have listed the appropriate partition sizes per recovery enviroment. Each enviroment is different, thus the different partition sizes. If you do not create these partitions prior to restoring a recovery enviroment, you will be leaving a lot of empty space on your drive that you otherwise may not have access to due to partition resizing restrictions. I chose to create a drive that had partitions for OS X 10.6 to macOS 10.15, in addition to my Mac OS PE (create with Tech Tool Pro) and tools because those are the partitions i needed access to. You can create as many or as little partitions as you see fit. </p>
+  <h3>Creating the recovery partitions</h3>
+  <img class="imgcenter" src="../Images/Screen Shot 2020-10-28 at 3.15.54 PM.png" width="500px" alt="InstallDiskCreator"/>
+  <p>Once you have your partitions created, you have a couple different methods to fill them: </p>
+  <ol class="list">
+    <li><b>Install Disk Maker:</b> This is an awesome tool created by MacDaddy. I chose to use this option because it takes the tediousneesss out of creating the partitions. All you do is select your partition name, select your Install MacOS.app from your /Applications/ folder and hit "Create Installer". Done. Note: There is a smiliar app called Disk Maker X, but i do not reccommend using this app, esspacially if you are creating recovery enviormnets for older versions of MacOS, such as El Capitan. It is not optimized for every verison of MacOS, and can error out with no real fix in place. You can find the latest version of Install Disk Maker <a href="https://macdaddy.io/install-disk-creator/"><em>here.</em></a></li>
+    <li><b><i>createinstallmedia command:</i></b> This is the same method Install Disk Maker uses, just without the GUI. Better for those who are more comfortable with Terminal. You can find the instructions for this method <a href="https://support.apple.com/en-us/HT201372"><em>here.</em></a></li>
+    <li><b>Restore with Disk Utility:</b> This option should really only be used if your install files are in .DMG format. Disk Utility makes it very easy to restore to a partiton of your choice. This option cannot be used with Install MacOS.app from the App Store.</li>
+  </ol>
+  <h3>Adding additional tools </h3>
+  <p>Now that you have your desired recovery partitions, one thing you might want to consider adding is a bootable version of macOS. In the example above, I have created a partition named "macOS PE". You can create this partition by either 1. Cloning your existing system to that partition using a tool like Carbon Copy Cloner, or 2. Use a tool like Tech Tool Pro, which includes a utility called ProToGo that still clones your existing system, but only clones the necessary applications (Terminal, Disk Utility... etc). Either option allows you to boot the computer your working on to an enviroment that is identical to your personal computer.<br>
+    <br>
+    I have also included a Tools partition that you can put a variety of utilites you may use to get your tasks done. You can put anything you want on here and i recommend formatting this as exFAT incase you want to have access to some Windows/Linux based tools. One tool I put on here is Carbon Copy Cloner, as it can be very handy trying to recovery data from a Mac that fails to boot due to a failing HDD, but the drive itself is still readable.</p>
+  <h3>Booting to your desired partition</h3>
+  <p>This part is easy. Turn off the computer you're working on, plug in your Recovery Drive, turn on the computer while holding Option/Alt, and select your partition. </p>
+  <div class="disclaimer">When installing certain versions of OS X, specifically 10.11 El Capitan, you may encounter an error that states "OS X could not be installed on your computer. No packages were eligible for install". This is a bug related to the installers certificate. If you go to <b>Terminal</b> before attempting to update and change the date/time of your system, you’ll be able to install. For example 18th April 2016 5:15PM would use the following command: <b>date 0418171516</b> </div>
+  <br>
+  <div class="disclaimer">If you choose to make a bootable version of MacOS (PE), depending on your choice of OS and the computer you're working on, you may not be able to boot. For example: your PE is Catalina based, you may not be able to boot on a computer that does not support Catalina.</div>
+</div>
+<div id="footer">
+  <div id="social" align="center"> <img src="../Images/youtube.png" class="socialfooter" width="60" height="60" alt=""/> <img src="../Images/linkedin.png" class="socialfooter" width="60" height="60" alt=""/> <img src="../Images/reddit.png" class="socialfooter" width="60" height="60" alt=""/> <img src="../Images/stackoverflow.png" class="socialfooter" width="60" height="60" alt=""/> <img src="../Images/instagram.png" class="socialfooter" width="60" height="60" alt=""/> <img src="../Images/github.png" class="socialfooter" width="60" height="60" alt=""/> </div>
+  <p align="center">Ryan Coen - 2020</p>
+</div>
+</body>
+</html>
