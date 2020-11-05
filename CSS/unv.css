@@ -30,6 +30,7 @@ nav {
   background: #FFFFFF;
   z-index: 10;
   min-width: 800px;
+	
 }
 nav .logo {
   position: relative;
@@ -60,7 +61,7 @@ nav .links {
   font-size: 25px;
   font-weight: 900;
   text-transform: uppercase;
-  top: 26px;
+  top: 24px;
   border-radius: 50px;
 }
 nav .links li {
