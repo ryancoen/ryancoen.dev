@@ -7,12 +7,10 @@ body {
   font-size: 22px;
   font-family: sans-serif;
   height: 100%;
-  margin-top: 150px;
+  margin-top: 145px;
   margin-left: 0;
   margin-right: 0;
-  min-width: 1000px;
-  width: auto !important;
-  width: 1000px;
+  width: 100%;
 }
 a, a:hover {
   color: #000000;
@@ -21,20 +19,18 @@ a, a:hover {
   font-weight: 400;
   font-style: normal;
 }
-nav {
+#navigation {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  height: 140px;
+  height: 145px;
   background: #FFFFFF;
   z-index: 10;
-  min-width: 800px;
 	
 }
-nav .logo {
+#navigation .logo {
   position: relative;
-  float: left;
   height: 50px;
   line-height: 50px;
   padding: 0 15px;
@@ -45,15 +41,9 @@ nav .logo {
   border-radius: 50px;
   left: 145px;
 }
-nav .logo span {
-  display: inline-block;
-  position: relative;
-  top: -8px;
-  font-size: 13pt;
-}
-nav .links {
+#navigation .links {
   float: right;
-  margin-right: 10px;
+  margin-right: 40px;
   position: relative;
   height: 50px;
   line-height: 50px;
@@ -61,33 +51,33 @@ nav .links {
   font-size: 25px;
   font-weight: 900;
   text-transform: uppercase;
-  top: 24px;
+  top: 23px;
   border-radius: 50px;
 }
-nav .links li {
+#navigation .links li {
   float: left;
   list-style: none;
   position: relative;
   display: inline-block;
 }
-nav .links li > a {
+#navigation .links li > a {
   position: relative;
   display: inline-block;
   padding: 0 10px;
   line-height: 30px;
   height: 30px;
 }
-nav .links li > a:hover {
+#navigation .links li > a:hover {
   color: #fff;
   background: linear-gradient(18deg, rgba(166, 43, 80, 1) 0%, rgba(39, 26, 87, 1) 100%);
   border-radius: 5px;
 }
-nav .logo:hover {
+#navigation .logo:hover {
   color: #fff;
   background: linear-gradient(18deg, rgba(166, 43, 80, 1) 0%, rgba(39, 26, 87, 1) 100%);
   border-radius: 5px;
 }
-nav .links li ul {
+#navigation .links li ul {
   position: absolute;
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, .15);
@@ -95,20 +85,20 @@ nav .links li ul {
   list-style: none;
   padding-left: 0;
 }
-nav .links li ul > li {
+#navigation .links li ul > li {
   clear: both;
   display: block;
   margin: 0;
   width: 100%;
 }
-nav .links li ul > li:hover {
+#navigation .links li ul > li:hover {
   background: #453B5E;
 }
-nav .links li ul > li:hover > a {
+#navigation .links li ul > li:hover > a {
   background: #453B5E;
   color: #fff;
 }
-nav .links li:hover > .drop {
+#navigation .links li:hover > .drop {
   display: block;
 }
 #logopic {
@@ -160,3 +150,19 @@ h1,h2,h3,h4{
   font-weight: Bold;
   font-style: normal;
 }
+
+@media screen and (max-width: 800px) {
+  #main1, #main2, #main3 {
+    visibility: hidden;
+	  display: none;
+	  width: 1px;
+	}
+  }
+
+@media screen and (min-width: 800px) {
+  #main4 {
+    visibility: hidden;
+	  display: none;
+	  width: 1px;
+	}
+  }

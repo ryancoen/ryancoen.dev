@@ -1,31 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
-#welcomebox {
-  margin-top: -100px;
-  top: 0;
-  width: 700px;
-  position: relative;
-}
-h1 {
-  color: black;
-  font-family: atten-new, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-p {
+#intro {
   color: black;
   font-family: atten-new, sans-serif;
   font-weight: 300;
   font-style: normal;
+	max-width: 700px;
+	  margin-right: auto;
+  margin-left: auto; 
+	padding-left: 20px;
+	padding-right: 20px;
+	
 }
 #profile {
   position: relative;
   display: block;
   margin-right: auto;
-  margin-left: auto;
-  width: 500px;
-  height: 500px;
-  top: 0;
+  margin-left: auto; 
+	top: -50px;
 }
 body {
   animation: fadeInAnimation ease 3s;
@@ -39,4 +31,8 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+h1{
+	top: -100px;
 }
