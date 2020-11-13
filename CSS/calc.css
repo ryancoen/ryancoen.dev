@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* CSS Document */
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: soleil, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.calculator {
+  background-color: #292929;
+  border-radius: 20px; 
+  display: grid;
+  justify-content: center;
+  align-content: center;
+	height: 500px;
+	width: 350px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: minmax(120px, auto) repeat(5, 85px);
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+.calculator > button {
+  cursor: pointer;
+	border: 1px solid black;
+	outline: none;
+	font-size: 40px;
+	border-radius: 0px;
+	margin: 0px;
+}
+
+.span-two{
+	grid-column: span 2;
+	background-color: #5E5E5E;
+}
+
+.output{
+	grid-column: 1/-1;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	flex-direction: column;
+	word-wrap: break-word;
+	word-break: break-all;
+	padding-right: 10px;
+	font-size: 65px;
+	margin-top: 45px;
+	
+}
+
+.previous-operand{
+	display: none;
+}
+
+.operators{
+	background-color: #FF9F0B;
+}
+
+.operators:active{
+	background-color: #E78C00;
+}
+
+.top{
+	background-color: #3E3E3E;
+}
+
+.top:active{
+	background-color: #5E5E5E;
+}
+
+.numbers{
+	background-color: #5E5E5E;
+}
+
+.numbers:active{
+	background-color: #6B6B6B;
+}
+
+#zero{
+	border-bottom-left-radius: 20px;
+}
+
+#zero:active{
+	border-bottom-left-radius: 20px;
+	background-color: #6B6B6B;
+}
+
+#equal{
+	border-bottom-right-radius: 20px;
+}
+
+.mac{
+	width: 15px;
+	height: 15px;
+	border-radius: 100px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#close {
+	background-color: #FF5F57;
+}
+
+#min {
+	background-color: #FFBC2E;
+}
+
+#grow {
+	background-color: #29C840;
+}
+
+#menu{
+	float: left;
+	display: flex;
+	height: 25px;
+	position: absolute;
+}
+
+h1,h2,h5 {
+	color: black;
+}
+
+h1{
+	
+}
+
+body{
+	padding-top: 5px;
+}
+
+#description{
+	min-width: 450px;
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+p{
+	color:black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+b{
+	color: black;
+	text-decoration: underline;
+}
+
+.button {
+  display: block;
+  border: 2px solid #060606;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: atten-new, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+  width: 175px;
+	text-align: center;
+}
+.button:hover {
+  background: #000000;
+  color: #FFFFFF;
+  font-family: atten-new, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+li{
+	color:black;
+}

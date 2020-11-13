@@ -9,28 +9,63 @@
 </head>
 <nav id="navigation"><a href="../index.html" class="logo">RYANCOEN.DEV</a>
   <ul class="links">
-    <li class="dropdown"><a href="../HTML/directory.html" class="trigger-drop">Projects</a>
+    <li class="dropdown" id="main1"><a href="../HTML/directory.html" class="trigger-drop">Projects</a>
       <ul class="drop">
-        <li><a href="#">Github</a></li>
-        <li><a href="../HTML/directory.html">All</a></li>
+        <li><a href="https://github.com/ryancoen">Github</a></li>
+        <li><a href="./HTML/directory.html">All</a></li>
       </ul>
     </li>
-    <li class="dropdown"><a href="../HTML/music.html" class="trigger-drop">Music</a>
-    <li><a href="../HTML/about.html">About</a></li>
+    <li id="main2"><a href="./HTML/music.html">Music</a></li>
+    <li id="main3"><a href="./HTML/about.html">About</a></li>
+    <li class="dropdown" id="main4"><a href="./HTML/directory.html" class="trigger-drop">Menu</a>
+      <ul class="drop">
+        <li><a href="#">Github</a></li>
+        <li><a href="./HTML/music.html">Music</a></li>
+        <li><a href="./HTML/about.html">About</a></li>
+        <li><a href="../HTML/directory.html">Projects</a></li>
+      </ul>
     </li>
   </ul>
 </nav>
-<a href="../index.html"> <img src="../Images/logo.png"  width="135" height="135" id="logopic" alt=""/></a>
+<a href="../index.html"><img src="../Images/logo.png"  width="135" height="135" id="logopic" alt=""/></a>
 <body>
 <div id="parent"> <img class="banner" src="../Images/piBKGND.jpg"  alt=""/> <img id="topimage" src="../Images/unibody-time-machine.png"  alt=""/> </div>
 <div id="article">
-  <h2>Quad SATA Hat + Raspberry Pi NAS/Time Machine [Guide]</h2>
+  <h2>Raspberry Time Machine [Guide]</h2>
   <h5>Updated: 08/06/2020</h5>
   <h3>Intro:</h3>
-	<h3>The Hardware</h3>
-	<h3>Installing Linux</h3>
-	<h3>Installing Drivers/Firmware</h3>
-	<h3>Configure Open Media Vault</h3>
+  <p>Over the years through repairing and upgrading devices, I have accumulated a good amount of perfectly fine and functional internal HDDs. I didn't want to just throw them out, so i figured there had to be another solution. I decided I wanted to build a NAS for my home network. There are a ton of options out there for home NAS systems, like Synology and QNAP, but I really didn't want to spend an arm and a leg just to use these drives that I would otherwise throw out. I searched around, and found this:</p>
+  <img src="../Images/IMG_0578.JPG" id="image1"/>
+  <p>This is the Rock Pi SATA Hat, a add-on module and case for the Raspberry Pi 4. This is exaclty what i was looking for; a low cost alternative to the bugger brands I could build myself and put those old drive to use. You can check it out <a href="https://wiki.radxa.com/Dual_Quad_SATA_HAT">here</a>. I chose to use mine for a few different purposes, including a Time Macine backup solution as well as a network RAID array for my retro game collection.</p>
+  <h3>What you'll need:</h3>
+  <p>There are only a few things you'll need to get this project started:
+  <ul>
+    <li>Rock Pi Sata Hat (Listed above)</li>
+    <li>32GB SD Card</li>
+    <li>Raspberry Pi 4 (I chose the 4GB model)</li>
+    <li>A real PC (I used a Mac)</li>
+    <li>1-4 2.5" HDDs (sizes don't matter unless you plan a certain RAID configuration)</li>
+  </ul>
+  </p>
+  <p>The Rock Pi kit comes with everything you'll need to assemble the tower. It is important to note that the assembly does come with a shroud and fan, which it not pictured above, and is NOT required. </p>
+  <h3>Installing Linux</h3>
+  <p>This part is easy. I chose to use the version of Linux optimized for the Pi, which you can find on <a href="https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/">raspberrypi.org.</a> Using Raspberri Pi Imager, simply insert your SD into your computer, select your verison of Liunx, and let it go. Once it's done, insert that SD card into your Pi. NOTE: You dont have to use Raspian OS, thats just what i chose to use. Once you have your Pi set up, issue the following commands (through the device itself or SSH) to make sure everything is up to date:</p>
+  <div class="code"><i>sudo apt-get update<br>
+    sudo apt-get upgrade</i></div>
+  <h3>Installing Drivers/Firmware</h3>
+  <p>Issue the following command to make the Rock PI recognize your drives and operates correctly:</p>
+  <div class="code"><i>curl -sL https://rock.sh/get-rockpi-sata | sudo -E bash -</i></div>
+	<p>I would reccomend visiting the manufactures website <a href="https://wiki.radxa.com/Dual_Quad_SATA_HAT">here</a> for additonal documentaion for adjustments like firmware, fan curve, LCD messaging... etc</p>
+  <h3>Install/Configure Open Media Vault</h3>
+	<p>Now to install Open Media Vault (OMV). Issue the following command:</p>
+	<div class="code">wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash</div>
+  <h3>Credits and resources</h3>
+  <p>There were a ton of methods I tried to get this up and running successfully. You may want to configure yours a bit differently and not use OMV. Below are some awesome resources I used to learn from:</p>
+  <ul>
+    <li><a href="https://www.jannikarndt.de/blog/2018/01/how_to_use_a_raspberry_pi_for_your_time_machine_backups/">How to use a Raspberry Pi for your Time Machine backups</a></li>
+    <li><a href="https://gregology.net/2018/09/raspberry-pi-time-machine/">Raspberry Pi Time Machine (2020 update)</a></li>
+    <li><a href="https://dannyda.com/2020/01/02/how-to-create-apple-time-machine-in-open-media-vault-5-omv-5-with-shared-folder-smb-share-windows-share-shared-folder-cifs/">How To: Create Apple Time Machine in Open Media Vault 5 (OMV 5) with Shared Folder (SMB Share/Windows Share/Shared Folder/CIFS)</a></li>
+  </ul>
 </div>
 <div id="footer">
   <div id="social" align="center"> <img src="../Images/youtube.png" class="socialfooter" width="60" height="60" alt=""/> <img src="../Images/linkedin.png" class="socialfooter" width="60" height="60" alt=""/> <img src="../Images/github.png" class="socialfooter" width="60" height="60" alt=""/> </div>

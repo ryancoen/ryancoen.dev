@@ -27,3 +27,25 @@ p {
   font-weight: 300;
   font-style: normal;
 }
+
+#image1{
+	width: 350px;
+	max-width: 350px;
+	margin-left: auto;
+  margin-right: auto;
+	display: block;
+}
+
+.code{
+	height:50px;
+	background-color: #C4C4C4;
+	border-radius: 10px;
+	padding: 40px;
+	font-style: italic;
+}
+
+ul{
+	  font-family: atten-new, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}

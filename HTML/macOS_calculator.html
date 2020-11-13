@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>macOS Calculator | ryancoen.dev</title>
+<link rel="stylesheet" type="text/css" href="../CSS/calc.css">
+<link rel="stylesheet" type="text/css" href="../CSS/unv.css">
+<link rel="stylesheet" href="https://use.typekit.net/ynh7syw.css">
+<script type="text/javascript" src="../Javascript/calc.js" defer></script>
+</head>
+<nav id="navigation"><a href="../index.html" class="logo">RYANCOEN.DEV</a>
+  <ul class="links">
+    <li class="dropdown" id="main1"><a href="../HTML/directory.html" class="trigger-drop">Projects</a>
+      <ul class="drop">
+        <li><a href="https://github.com/ryancoen">Github</a></li>
+        <li><a href="./HTML/directory.html">All</a></li>
+      </ul>
+    </li>
+    <li id="main2"><a href="./HTML/music.html">Music</a></li>
+    <li id="main3"><a href="./HTML/about.html">About</a></li>
+	  <li class="dropdown" id="main4"><a href="./HTML/directory.html" class="trigger-drop">Menu</a>
+      <ul class="drop">
+        <li><a href="#">Github</a></li>
+		  <li><a href="./HTML/music.html">Music</a></li>
+		  <li><a href="./HTML/about.html">About</a></li>
+        <li><a href="../HTML/directory.html">Projects</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<a href="../index.html"><img src="../Images/logo.png"  width="135" height="135" id="logopic" alt=""/></a>
+<body>
+<h2 align="center">Javascript Calculator - macOS</h2>
+<div class="calculator">
+  <div id="menu">
+    <div class="mac" id="close"></div>
+    <div class="mac" id="min"></div>
+    <div class="mac" id="grow"></div>
+  </div>
+  <div class="output">
+    <div data-previous-operand class="previous-operand"></div>
+    <div data-current-operand class="current-operand"></div>
+  </div>
+  <button data-all-clear class="top">AC</button>
+  <button data-switch class="top">+/-</button>
+  <button data-operation class="top">%</button>
+  <button data-operation class="operators">÷</button>
+  <button data-number class="numbers">7</button>
+  <button data-number class="numbers">8</button>
+  <button data-number class="numbers">9</button>
+  <button data-operation class="operators">X</button>
+  <button data-number class="numbers">4</button>
+  <button data-number class="numbers">5</button>
+  <button data-number class="numbers">6</button>
+  <button data-operation class="operators">-</button>
+  <button data-number class="numbers">1</button>
+  <button data-number class="numbers">2</button>
+  <button data-number class="numbers">3</button>
+  <button data-operation class="operators">+</button>
+  <button data-number class="span-two" id="zero">0</button>
+  <button data-number class="numbers">.</button>
+  <button data-equals class="operators" id="equal">=</button>
+</div>
+<br>
+<br>
+<a href="" class="button">View Code</a>
+	<div id="description">
+<p>This is a fully functional calculator styled in the design of macOS Big Sur. The code is forked from <b>WebDevSimplified</b> and his code is linked on my Github. I have added the modulo and +/- feature in addtion to styling. Planned features include:
+<ul>
+  <li>Add functionality to macOS menu buttons</li>
+  <li>Model and expand to advanced calculator (Green macOS button)</li>
+</ul>
+</p>
+	</div>
+<div id="footer">
+  <div id="social" align="center"> <img src="../Images/youtube.png" class="socialfooter" width="60" height="60" alt=""/> <img src="../Images/linkedin.png" class="socialfooter" width="60" height="60" alt=""/> <img src="../Images/github.png" class="socialfooter" width="60" height="60" alt=""/> </div>
+  <h5 align="center">Ryan Coen - 2020</h5>
+</div>
+</body>
+</html>
