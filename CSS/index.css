@@ -5,19 +5,18 @@
   font-family: atten-new, sans-serif;
   font-weight: 300;
   font-style: normal;
-	max-width: 700px;
-	  margin-right: auto;
-  margin-left: auto; 
-	padding-left: 20px;
-	padding-right: 20px;
-	
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #profile {
   position: relative;
   display: block;
   margin-right: auto;
-  margin-left: auto; 
-	top: -50px;
+  margin-left: auto;
+  top: -50px;
 }
 body {
   animation: fadeInAnimation ease 3s;
@@ -32,7 +31,6 @@ body {
     opacity: 1;
   }
 }
-
-h1{
-	top: -100px;
+h1 {
+  top: -100px;
 }

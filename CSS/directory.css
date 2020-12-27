@@ -5,12 +5,13 @@ h1{
 	font-family: atten-new,sans-serif;
 font-weight: 1000;
 font-style: normal;
+	margin-bottom: -20px;
 
 }
 
 
 #list{
-	width: 50%;
+	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -21,14 +22,7 @@ font-style: normal;
 	font-family: atten-new,sans-serif;
 font-weight: 300;
 font-style: normal;
-}
-
-#divider{
-	width: 50%;
-	height: 5px;
-	background-color: black;
-	margin-left: auto;
-	margin-right: auto;
+	font-size: 25px;
 }
 
 .link2{

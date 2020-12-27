@@ -6,10 +6,12 @@
 <link rel="stylesheet" type="text/css" href="./CSS/index.css">
 <link rel="stylesheet" type="text/css" href="./CSS/unv.css">
 <link rel="stylesheet" href="https://use.typekit.net/ynh7syw.css">
+<link rel="mask-icon" href="./Images/logo.svg" color="#990000">
+<script type="text/javascript" src="./Javascript/dark.js" defer></script>
 </head>
-<nav id="navigation"><a href="../index.html" class="logo">RYANCOEN.DEV</a>
+<nav class="light-mode" id="navigation"><a href="../index.html" class="logo">RYANCOEN.DEV</a>
   <ul class="links">
-    <li class="dropdown" id="main1"><a href="../HTML/directory.html" class="trigger-drop">Projects</a>
+    <li class="dropdown" id="main1"><a href="./HTML/directory.html" class="trigger-drop">Projects</a>
       <ul class="drop">
         <li><a href="https://github.com/ryancoen">Github</a></li>
         <li><a href="./HTML/directory.html">All</a></li>
@@ -17,25 +19,28 @@
     </li>
     <li id="main2"><a href="./HTML/music.html">Music</a></li>
     <li id="main3"><a href="./HTML/about.html">About</a></li>
-	  <li class="dropdown" id="main4"><a href="./HTML/directory.html" class="trigger-drop">Menu</a>
+    <li class="dropdown" id="main4"><a href="./HTML/directory.html" class="trigger-drop">Menu</a>
       <ul class="drop">
         <li><a href="#">Github</a></li>
-		  <li><a href="./HTML/music.html">Music</a></li>
-		  <li><a href="./HTML/about.html">About</a></li>
+        <li><a href="./HTML/music.html">Music</a></li>
+        <li><a href="./HTML/about.html">About</a></li>
         <li><a href="../HTML/directory.html">Projects</a></li>
       </ul>
     </li>
+    <!--<li>
+      <input type="checkbox" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode" class="toggle" checked>
+    </li>-->
   </ul>
 </nav>
 <a href="../index.html"><img src="./Images/logo.png"  width="135" height="135" id="logopic" alt=""/></a>
-<body>
+<body id="body" class="light-mode">
 <br>
 <br>
 <br>
 <img src="./Images/mac1.png" id="profile" alt=""/>
-  <h1 align="center">Welcome To<br>
-    RyanCoen.dev</h1>
-  <p id="intro" align="center">A place for my projects, music, tutorials and all things that interest me. Everything you find here has been built from scratch, including this site. Check out my portfolio for the latest projects I'm working on.&nbsp; &nbsp; &nbsp; </p>
+<h1 align="center">Welcome To<br>
+  RyanCoen.dev</h1>
+<p class="light-mode" id="intro" align="center">A place for my projects, music, tutorials and all things that interest me. Everything you find here has been built from scratch, including this site. Check out my portfolio for the latest projects I'm working on.&nbsp; &nbsp; &nbsp; </p>
 <div id="footer">
   <div id="social" align="center"> <img src="./Images/youtube.png" class="socialfooter" width="60" height="60" alt=""/> <img src="./Images/linkedin.png" class="socialfooter" width="60" height="60" alt=""/> <img src="./Images/github.png" class="socialfooter" width="60" height="60" alt=""/> </div>
   <h5 align="center">Ryan Coen - 2020</h5>
