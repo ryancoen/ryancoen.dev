@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+}
+#navContainer {
+  width: 100%;
+  background-color: black;
+  height: 100px;
+  position: fixed;
+  z-index: 10;
+}
+.carousel {
+  top: 100px;
+}
+h1 {
+  font-family: reklame-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  color: white;
+  font-size: 60px;
+}
+h2 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-style: bold;
+  color: white;
+  font-size: 25px;
+  margin: 0;
+}
+#logo {
+  height: 60px;
+  top: 20px;
+  left: 50px;
+  position: fixed;
+}
+#logo2 {
+  height: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+}
+#navBox a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+	transform: 
+}
+
+#navBox a:hover {
+border-bottom: 3px solid white;
+}
+#navBox {
+  display: flex;
+  width: 570px;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: fixed;
+  top: 10px;
+  right: 40px;
+  height: 80px;
+}
+#navButton {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  background-color: #F07560;
+  border-color: #F07560;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 0;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  font-size: 23px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#carousel_message_slide1 {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 500px;
+}
+#carousel_message_slide2 {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 500px;
+}
+#carousel_message_slide3 {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 450px;
+}
+#carousel_message_slide4 {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 470px;
+}
+#carousel_message_slide5 {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 400px;
+	padding-top: 10px;
+}
+.carousel_message {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  padding-bottom: 1px;
+  margin-bottom: 24px;
+}
+.carousel {
+  background: #EEE;
+}
+.carousel-cell {
+  width: 100%;
+  height: 800px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  object-fit: cover;
+}
+#slide1 {
+  background-image: url("images/MixMatchReflex_Combined_LP.webp");
+  background-size: cover;
+}
+#slide2 {
+  background-image: url("images/activewear-stylish-steals.jpg");
+  background-size: cover;
+}
+#slide3 {
+  background-image: url("images/style_desktop.webp");
+  background-size: cover;
+}
+#slide4 {
+  background-image: url("images/mens_desktop.webp");
+  background-size: cover;
+}
+#slide5 {
+  background-image: url("images/FT_20.09.15_BLMSupport_feature.jpg");
+  background-size: cover;
+}
+.slidebutton {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 23px;
+  background-color: #F07560;
+  border-color: #F07560;
+  padding: 10px;
+  border-radius: 25px;
+}
+#slidebutton2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#slidebutton3 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #000;
+  border-color: #000;
+}
+.buttonbox {
+  width: 520px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-content: center;
+}
+#desc {
+  margin-top: 100px;
+  height: 450px;
+  padding: 30px;
+}
+#howContain {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divider {
+  background-color: black;
+  width: 2px;
+}
+#desc h2 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 25px
+}
+.descBox p {
+  width: 250px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  color: black;
+}
+.descBox h3 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.descImage {
+  width: 100px;
+}
+#footer {
+  height: 460px;
+  background-color: black;
+  padding: 25px;
+}
+#footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+#connect {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#connect img {
+  filter: invert(1);
+  width: 40px;
+  height: 40px;
+}
+#bottomLogo {
+  display: block;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footerCol {
+  width: 200px;
+  color: white;
+}
+
+#footer p{
+	font-size: 18px;
+}
+
+h4 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+ul {
+  list-style-type: none;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
