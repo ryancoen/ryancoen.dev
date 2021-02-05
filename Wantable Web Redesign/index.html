@@ -10,9 +10,15 @@
 </head>
 
 <body>
-<div id="navContainer"> <img id="logo" src="images/31d15eb42c448f9c944a7fa8fd73c76047347971 (1).png">
-  <div id="navBox"> <a>The Stream</a> <a>Style Guide</a> <a>Social Impact</a>
+<div id="navContainer"> 
+	<a href="index.html"><img id="logo" alt="logo" src="images/31d15eb42c448f9c944a7fa8fd73c76047347971 (1).png"></a>
+	<a href="index.html"><img id="miniLogo" alt="miniLogo" src="images/miniLogo.png"></a>
+  <div id="navBox"> <a href="https://www.wantable.com/stream/">The Stream</a> <a href="https://www.wantable.com/how-wantable-works">Style Guide</a> <a href="https://www.wantable.com/community">Social Impact</a>
     <button id="navButton">Login/Signup</button>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content"> <a href="#">The Stream</a> <a href="#">Style Guide</a> <a href="#">Social Impact</a> </div>
   </div>
 </div>
 <div id="container">
@@ -23,8 +29,8 @@
         <p>We've put together two <b>limited-time Edits</b> to start this year off right! Check them out below: </p>
       </div>
       <div class="buttonbox">
-        <button class="slidebutton">Shop the Refresh Edit</button>
-        <button class="slidebutton"> Shop the Lounge Edit</button>
+        <a href="https://www.wantable.com/themes/mix-match-refresh-edit"><button class="slidebutton">Shop the Refresh Edit</button></a>
+        <a href="https://www.wantable.com/themes/love-to-lounge-edit"><button class="slidebutton"> Shop the Lounge Edit</button></a>
       </div>
     </div>
     <div class="carousel-cell" id="slide2">
@@ -33,7 +39,7 @@
         <h2>Activewear to Chill-wear. Either way, we got you.</h2>
         <p>Expertly styled activewear, delivered right to your door.</p>
       </div>
-      <button class="slidebutton" id="slidebutton2">Shop the Active Edit</button>
+      <a href="https://www.wantable.com/edits/active"><button class="slidebutton" id="slidebutton2">Shop the Active Edit</button></a>
     </div>
     <div class="carousel-cell" id="slide3">
       <div align="center" class="carousel_message" id="carousel_message_slide3">
@@ -41,7 +47,7 @@
         <h2>1 STYLE EDIT = 7 ITEMS STYLED FOR YOU</h2>
         <p>It's a new day. Style has evolved. And it's all about you. Want signature looks? New brands? The latest trends? Get it all delivered to your door.</p>
       </div>
-      <button class="slidebutton" id="slidebutton2">Shop the Style Edit</button>
+      <a href="https://www.wantable.com/edits/style"><button class="slidebutton" id="slidebutton4">Shop the Style Edit</button></a>
     </div>
     <div class="carousel-cell" id="slide4">
       <div align="center" class="carousel_message" id="carousel_message_slide4">
@@ -49,14 +55,14 @@
         <h2>We didn't forget about the guys.</h2>
         <p>Performance and loungewear picks for working out or kicking back. Picked just for you.</p>
       </div>
-      <button class="slidebutton" id="slidebutton3">Shop the Men's Active Edit</button>
+      <a href="https://www.wantable.com/edits/mens-active"><button class="slidebutton" id="slidebutton3">Shop the Men's Active Edit</button></a>
     </div>
     <div class="carousel-cell" id="slide5">
-      <div align="center" class="carousel_message" id="carousel_message_slide5"> <img id="logo2" src="images/31d15eb42c448f9c944a7fa8fd73c76047347971 (1).png">
+      <div align="center" class="carousel_message" id="carousel_message_slide5"> <img id="logo2" alt="slideLogo" src="images/31d15eb42c448f9c944a7fa8fd73c76047347971 (1).png">
         <h1>Stands with the Community</h1>
-        <p>We are proud to stand against racial inequality and support our community to make it a better place for everyone. Click below to learn how you can join our mission.</p>
+        <p>We are proud to stand against racial inequality and support our community to make it a better place for everyone. Learn about our mission below.</p>
       </div>
-      <button class="slidebutton" id="slidebutton2">Learn more</button>
+      <a href="https://www.wantable.com/community"><button class="slidebutton" id="slidebutton5">Learn more</button></a>
     </div>
   </div>
 </div>
@@ -65,19 +71,19 @@
   <div id="howContain">
     <div align="center" class="descBox">
       <h3>CHOOSE YOUR EDIT</h3>
-      <img class="descImage" src="images/clothes.png">
+      <img class="descImage" alt="shirt" src="images/clothes.png">
       <p>Select your Edit and take the quiz. We'll send the perfect pieces based on your unique needs and preferences, all for only a $20 styling fee.</p>
     </div>
     <div class="divider"></div>
     <div align="center" class="descBox">
       <h3>YOUR EDIT ARRIVES</h3>
-      <img class="descImage" src="images/392-3923016_shipping-box-icon-png-shipping-box-icon.png copy.png">
+      <img class="descImage" alt="box" src="images/392-3923016_shipping-box-icon-png-shipping-box-icon.png copy.png">
       <p>Take five days to try on seven items at home. Pay only for what you love, return/exchange the rest. Even if you only keep one item, your styling fee will be applied to your order as a credit.</p>
     </div>
     <div class="divider"></div>
     <div align="center" class="descBox">
       <h3>FREE RETURNS & PICK-UP</h3>
-      <img class="descImage" src="images/Tick_Mark_Dark-512.png">
+      <img class="descImage" alt="checkmark" src="images/Tick_Mark_Dark-512.png">
       <p>Enjoy free shipping with free drop-off/pick-up for returns. No subscription required.</p>
     </div>
   </div>
@@ -87,40 +93,43 @@
     <div class="footerCol">
       <h4>Services</h4>
       <ul>
-        <li>Limited-Time Edits</li>
-        <li>Women's Active Edit</li>
-        <li>Women's Style Edit</li>
-        <li>Men's Style Edit</li>
-        <li>The Stream</li>
-        <li>Gift Wantable</li>
+        <li><a href="">Limited-Time Edits</a></li>
+        <li><a href="https://www.wantable.com/edits/style">Women's Active Edit</a></li>
+        <li><a href="https://www.wantable.com/edits/active">Women's Style Edit</a></li>
+        <li><a href="https://www.wantable.com/edits/mens-active">Men's Style Edit</a></li>
+        <li><a href="https://www.wantable.com/stream/">The Stream</a></li>
+        <li><a href="https://www.wantable.com/gifts/">Gift Wantable</a></li>
       </ul>
     </div>
     <div class="footerCol">
       <h4>Our Company</h4>
       <ul>
-        <li>Our Story</li>
-        <li>Community</li>
-        <li>Blog</li>
-        <li>Careers</li>
-        <li>Affliliate Program</li>
-        <li>Accessibility</li>
+        <li><a href="https://www.wantable.com/our-story">Our Story</a></li>
+        <li><a href="https://www.wantable.com/community">Community</a></li>
+        <li><a href="http://blog.wantable.com/">Blog</a></li>
+        <li><a href="http://blog.wantable.com/jobs/">Careers</a></li>
+        <li><a href="http://blog.wantable.com/affiliates/">Affliliate Program</a></li>
+        <li><a href="">Accessibility</a></li>
       </ul>
     </div>
     <div class="footerCol">
       <h4>Questions?</h4>
       <ul>
-        <li>How it works</li>
-        <li>FAQ</li>
-        <li>Contact Us</li>
-        <li>Size Chart</li>
-        <li>Order Tracking</li>
+        <li><a href="https://www.wantable.com/how-wantable-works/">How it works</a></li>
+        <li><a href="https://support.wantable.com/hc/en-us">FAQ</a></li>
+        <li><a href="https://support.wantable.com/hc/en-us">Contact Us</a></li>
+        <li><a href="http://blog.wantable.com/wantable-size-chart/">Size Chart</a></li>
+        <li><a href="https://www.wantable.com/order-tracking/">Order Tracking</a></li>
       </ul>
     </div>
   </div>
   <div id="connect">
     <h2>Connect With Us:</h2>
-    <img src="images/apple.png"> <img src="images/fb.png"> <img src="images/ins.png"> <img src="images/tw.png"> </div>
-  <img align="center" id="bottomLogo" src="images/WRC.png">
+    <a href="https://www.wantable.com/app"><img alt="applelogo" src="images/apple.png"> </a>
+	  <a href="https://www.facebook.com/Wantableco"><img alt="fblogo" src="images/fb.png"> </a>
+	  <a href="https://www.instagram.com/wantable/"><img alt="instalogo" src="images/ins.png"> </a>
+	  <a href="https://twitter.com/wantableco"><img alt="twlogo" src="images/tw.png"></a> </div>
+  <a href="https://ryancoen.dev"><img align="center" alt="linktoportfolio" id="bottomLogo" src="images/WRC.png"></a>
   <p align="center">I am in no way affiliated with Wantable. This is a proof of concept. </p>
 </div>
 </body>
