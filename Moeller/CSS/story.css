@@ -1,0 +1,133 @@
+#mainContainer{
+	background-image: url("../images/2.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
+#TopBanner{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+#TopBanner h1{
+	 font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 45px;
+	color: white;
+	
+}
+#TopBanner p{
+	 font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 25px;
+	color: white;
+}
+
+#container{
+	height: 280px;
+	background: linear-gradient(209deg, rgba(130, 169, 208, 1) 0%, rgba(51, 96, 144, 1) 59%);
+}
+
+#container2{
+	height: 250px;
+	background-color: rgba(255, 255, 255, .95);
+}
+
+#container3{
+	height: 500px;
+	padding-top: 25px;
+	background-color: rgba(255, 255, 255, .95);
+}
+
+
+#innerDiv3{
+padding-top: 10px;
+	padding-left: 40px;
+		 font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+	font-size: 45px;
+		background-image: url("../images/7.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 800px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#paraContainer{
+	display: flex;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-between;}
+
+#paraContainer h2{
+	 font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 35px;
+	color: #C59046;
+}
+
+#paraContainer p{
+	 font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 20px;
+	color: #fff;
+}
+
+#profileImg{
+	width: 200px;
+	height: 200px;
+	flex-shrink: 0;
+	border-radius: 150px;
+	border: 3px solid black;
+	margin-top: 20px;
+}
+
+#innerProfile{
+	display: flex;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-between;
+	align-content: center;
+	
+}
+
+#profileDesc{
+	width: 400px;
+		 font-family: 'Raleway', sans-serif;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+#profileDesc p{
+	width: 420px;
+}
+
+#profileDesc h3{
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-bottom: 0px;
+	font-weight: 800;
+}
+
+#profileDesc h4{
+margin-top: 0px;
+	text-transform: uppercase;
+	font-size: 20px;
+		font-weight: 500;
+}

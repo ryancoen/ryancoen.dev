@@ -3,82 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <title>Moeller Home Managment | Milwaukee's premium home improvment service </title>
-<link rel="stylesheet" href="styles.css" media="screen">
+<link rel="stylesheet" href="CSS/styles.css" media="screen">
+<link rel="stylesheet" href="CSS/home.css" media="screen">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="main.css" media="screen">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav> <img id="logo" src="logo.png">
+<nav> <a href="index.html"><img id="logo" src="images/noTextLogo.png"></a>
   <div id="menuDiv">
     <ul id="menu">
+      <a href="HTML/our-story.html">
       <li class="menuItem">Our Story</li>
+      </a> <a href="HTML/our-services.html">
       <li class="menuItem">Our Services</li>
+      </a> <a href="HTML/testimonials.html">
       <li class="menuItem">Testimonials</li>
-      <li class="menuItem">Contact Us</li>
+      </a> <a href="HTML/contact-us.html">
+      <li id="contactBtn" class="btn">Contact Us</li>
+      </a>
     </ul>
   </div>
 </nav>
 <div id="welcomeBanner" align="center">
-  <h1>We do <span class="verb">everything</span>.</h1>
-  <p>From expert home repair to proactive maintenance and personalized home concierge services, you and your home are in the very best of hands. <b><br>
-    <br>
-    Moeller Home Management</b> is here to care for anything your home may need, 24/7, so you can focus on what matters most. </p>
-  <button>Let's Talk</button>
+ <h1 id="bannerTitle">Welcome, Home</h1>
+	<h3 id="brand">Moeller Home Management</h3>
+	<h3 id="tagLine">Your Home; <b>Upgraded</b></h3>
+	
 </div>
 <div class="slider">
   <div class="slide1"></div>
   <div class="slide2"></div>
   <div class="slide3"></div>
 </div>
-<div id="testimonyArea">
-  <div id="testimonyQuote"> <img id="quote" src="images/144-1440683_quote-icon-png-transparent-png.png">
-    <p>"My home was a mess and in need of some serious renovations. Moeller came just in time and saved me a ton of money in the process."</p>
-    <p>- Home Depot CEO</p>
-    <img id="quote2" src="images/144-1440683_quote-icon-png-transparent-png.png"> </div>
+<div id="contactbanner">
+  <div id="innerbanner">
+    <div class="caption"> We do
+      <div class="text-box">
+        <div>everything.</div>
+        <div>design.</div>
+        <div>construction.</div>
+        <div>cleaning.</div>
+        <div>installation.</div>
+        <div>security.</div>
+        <div>technology.</div>
+        <div>landscaping.</div>
+        <div>repair.</div>
+        <div>maintenance.</div>
+      </div>
+    </div>
+    <button class="btn">Let's Talk</button>
+  </div>
 </div>
+	<div id="descContainer">
+		<h2 align="center">Home improvement without the hassle</h2>
+	<div id="innerDescContain">
+		<div class="savings">
+		<h3>Your time is valuable</h3><br><br><br><br><br>
+			<p>We source, schedule and negotiate the best providers for your projects; No need to worry about wasting time or waiting for call backs.</p>
+		</div>
+		<div class="savings">
+		<h3>Make every dollar count</h3><br><br><br><br>
+			<p>We ensure the job is done right, the first time, with no hidden costs. Our <b>Home Physical Analysis</b> proactively identifies concerns before they become expensive repairs.</p>
+		</div>
+		<div class="savings">
+		<h3>Give you Peace of Mind</h3><br><br><br><br>
+			<p>Home improvement can be stressful. We match you with providers you can trust and ensure your projects meet your budget.</p>
+		</div>
+		</div>
+	</div>
 <div id="footer">
   <div id="footerContainer">
     <div class="footerCol">
-      <h4>Services</h4>
+      <a href=""><h4>Services</h4></a>
       <ul>
-        <li>Cleaning</li>
-        <li>Construction</li>
-        <li>Design</li>
-        <li>Installation</li>
-        <li>Landscaping</li>
-        <li>Maintenance and Repair</li>
-        <li>Security</li>
-        <li>Specialty</li>
-        <li>Tech</li>
+		  <a href=""><li>Cleaning</li></a>
+        <a href=""> <li>Construction</li></a>
+        <a href=""> <li>Design</li></a>
+        <a href=""> <li>Installation</li></a>
+         <a href=""><li>Landscaping</li></a>
+         <a href=""><li>Maintenance and Repair</li></a>
+         <a href=""><li>Security</li></a>
+         <a href=""><li>Tech</li></a>
       </ul>
     </div>
     <div class="footerCol">
-      <h4>Our Company</h4>
+       <a href=""><h4>Our Company</h4></a>
       <ul>
-        <li>Our Story</li>
-        <li>Community</li>
-        <li>Blog</li>
-        <li>Careers</li>
+        <a href=""> <li>Our Story</li></a>
+        <a href=""> <li>Community</li></a>
       </ul>
-    </div>
-    <div class="footerCol">
-      <h4>Questions?</h4>
+       <a href=""><h4>Questions?</h4></a>
       <ul>
-        <li>How it works</li>
-        <li>FAQ</li>
-        <li>Contact Us</li>
+         <a href=""><li>FAQ/How it works</li></a>
+         <a href=""><li>Contact Us</li></a>
       </ul>
     </div>
   </div>
   <div id="connect">
     <h2>Connect With Us:</h2>
-    <img src="images/fb.png"> <img src="images/ins.png"> <img src="images/tw.png"> </div>
-  <img id="logo2" src="logo.png">
-  <p style="color: white" align="center">Ryan Coen Design 2021 </p>
+    <img src="images/fb.png"> <img src="images/ins.png"> </div>
+  <img id="logo2" src="images/logo2.png">
+  <p style="color: white" align="center">© Moeller Home Management 2021 / Design by Ryan Coen </p>
 </div>
-<script src="js/classListShim.js"></script>
-	<script src="js/app.js"></script>
 </body>
 </html>

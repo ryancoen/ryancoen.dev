@@ -16,7 +16,7 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
-  top: -50px;
+	width: 400px;
 }
 body {
   animation: fadeInAnimation ease 3s;
@@ -32,5 +32,15 @@ body {
   }
 }
 h1 {
-  top: -100px;
+	display: block;
+	
+}
+
+@media screen and (max-width: 480px) {
+  #profile {
+	  width: 200px;}
+}
+
+#menudrop{
+	transform: translateX(-42px);
 }
