@@ -43,24 +43,31 @@ button:hover {
   position: absolute;
   z-index: 10;
   width: 500px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  top: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 15px;
   color: white;
-  padding: 15px;
+  opacity: 1;
+  animation: fadeInAnimation ease 3s; animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-
-#welcomeBanner img{
-	width: 500px
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#welcomeBanner img {
+  width: 500px;
 }
 .slider {
   max-width: 100%;
-  height: 1000px;
+  height: 100vh;
   position: relative;
-  opacity: .4;
+  opacity: .5
 }
 .slide1, .slide2, .slide3, .slide4, .slide5 {
   position: absolute;
@@ -400,8 +407,8 @@ button:hover {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 10px;
-	margin-left: 25px;
-	margin-right: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 #innerDescContain {
   display: flex;
@@ -410,8 +417,8 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   max-width: 900px;
-	height: auto;
-	padding-bottom: 25px;
+  height: auto;
+  padding-bottom: 25px;
 }
 .savings {
   width: 240px;
@@ -423,7 +430,7 @@ button:hover {
   background: linear-gradient(209deg, rgba(130, 169, 208, 1) 0%, rgba(51, 96, 144, 1) 59%);
   color: #fff;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
-	position: relative;
+  position: relative;
 }
 .savings h3 {
   font-family: 'Raleway', sans-serif;
@@ -439,62 +446,58 @@ button:hover {
   font-size: 16px;
   margin-left: auto;
   margin-right: auto;
-	max-width: 90%;
-	position: absolute;
-	bottom: 0;
+  max-width: 90%;
+  position: absolute;
+  bottom: 0;
 }
-
 @media only screen and (max-width: 600px) {
-	#welcomeBanner{
-		width: 400px;
-	}
-		#welcomeBanner img{
-		width: 400px;
-	}
+  #welcomeBanner {
+    width: 400px;
+  }
+  #welcomeBanner img {
+    width: 400px;
+  }
 }
-
 @media only screen and (max-width: 900px) {
-	#innerDescContain{
-		display: inherit;
-	}
-	.savings{
-		width: 70%;
-		max-height: 150px;
-		margin-bottom: 25px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#innerbanner{
-		display: inherit;
-		height: auto;
-		
-	}
-	.caption{
-		width: 450px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#talkBtn{
-		width: 300px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#contactbanner{
-		height: 175px;
-	}
+  #innerDescContain {
+    display: inherit;
+  }
+  .savings {
+    width: 70%;
+    max-height: 150px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #innerbanner {
+    display: inherit;
+    height: auto;
+  }
+  .caption {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #talkBtn {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contactbanner {
+    height: 175px;
+  }
 }
-
-.badge{
-	position: absolute;
-	left: -15px;
-	top: -30px;
-	background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
-	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
-	width: 35px;
-	height: 35px;
-	border-radius: 100px;
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
+.badge {
+  position: absolute;
+  left: -15px;
+  top: -30px;
+  background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 25px;
 }
