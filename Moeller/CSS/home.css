@@ -39,6 +39,13 @@ button:hover {
   text-transform: uppercase;
   font-size: 25px;
 }
+
+#sliderCover{
+	position: absolute;
+	 width: 100vw;
+  height: 100vh;
+}
+
 #welcomeBanner {
   position: absolute;
   z-index: 10;
@@ -64,7 +71,7 @@ button:hover {
   width: 500px;
 }
 .slider {
-  max-width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative;
   opacity: .5
@@ -475,7 +482,7 @@ button:hover {
     height: auto;
   }
   .caption {
-    width: 450px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
   }

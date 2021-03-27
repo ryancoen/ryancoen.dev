@@ -1,8 +1,9 @@
-body {
-  margin: 0;
-  background-color: #000000;
-	height: 100vh;
-	width: 100%;
+html, body {
+   width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+	background-color: #000;
 }
 nav {
   height: 60px;
@@ -84,6 +85,7 @@ top: 0px;
 
 #footer {
   height: 420px;
+	width: 100%;
   background-color: #34618F;
 }
 #footerContainer {
@@ -98,7 +100,7 @@ top: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
 }
