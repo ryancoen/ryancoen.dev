@@ -397,6 +397,7 @@ button:hover {
 #descContainer {
   height: auto;
   background-color: #fff;
+	margin-top: -1px;
 }
 #descContainer h2 {
   margin: 0;
