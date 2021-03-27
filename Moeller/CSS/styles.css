@@ -87,7 +87,8 @@ top: 0px;
 #footerContainer {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  max-width: 500px;
+	width:  90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -131,7 +132,7 @@ h2 {
 ul {
   list-style-type: none;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   padding: 0;
 }
 #logo2 {
@@ -145,3 +146,64 @@ ul {
 	text-decoration: none;
 	color: white;
 }
+
+
+@media only screen and (max-width: 900px) {
+	.menuItem{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.dropbtn{
+		display: none;
+	}
+}
+
+/* Dropdown Button */
+.dropbtn {
+ height: 50px;
+  border: none;
+font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+	text-transform: uppercase;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+		position: absolute;
+	right: 200px;
+	top: 28px;
+font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+	margin-top: 2px;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+box-shadow: 0px 5px 5px rgba(0,0,0,.25);
+  z-index: 1;
+		transform: translateX(-50px);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}

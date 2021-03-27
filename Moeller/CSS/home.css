@@ -39,15 +39,10 @@ button:hover {
   text-transform: uppercase;
   font-size: 25px;
 }
-#tagLine {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-}
 #welcomeBanner {
   position: absolute;
   z-index: 10;
-  width: 550px;
+  width: 500px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -57,9 +52,13 @@ button:hover {
   color: white;
   padding: 15px;
 }
+
+#welcomeBanner img{
+	width: 500px
+}
 .slider {
   max-width: 100%;
-  height: 800px;
+  height: 1000px;
   position: relative;
   opacity: .4;
 }
@@ -89,7 +88,7 @@ button:hover {
   animation: fade3 30s infinite;
   -webkit-animation: fade3 30s infinite;
 }
-
+/*
 @keyframes fade
 {
   0%   {opacity:1}
@@ -111,7 +110,7 @@ button:hover {
   66.666% { opacity: 1}
   100% { opacity: 0}
 }
-
+*/
 #contactbanner {
   height: 100px;
   width: 100%;
@@ -389,7 +388,7 @@ button:hover {
   }
 }
 #descContainer {
-  height: 400px;
+  height: auto;
   background-color: #fff;
 }
 #descContainer h2 {
@@ -401,14 +400,18 @@ button:hover {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 #innerDescContain {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 97%;
   margin-left: auto;
   margin-right: auto;
   max-width: 900px;
+	height: auto;
+	padding-bottom: 25px;
 }
 .savings {
   width: 240px;
@@ -420,13 +423,14 @@ button:hover {
   background: linear-gradient(209deg, rgba(130, 169, 208, 1) 0%, rgba(51, 96, 144, 1) 59%);
   color: #fff;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	position: relative;
 }
 .savings h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   margin: 0;
 }
 .savings p {
@@ -435,5 +439,62 @@ button:hover {
   font-size: 16px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+	max-width: 90%;
+	position: absolute;
+	bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	#welcomeBanner{
+		width: 400px;
+	}
+		#welcomeBanner img{
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#innerDescContain{
+		display: inherit;
+	}
+	.savings{
+		width: 70%;
+		max-height: 150px;
+		margin-bottom: 25px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#innerbanner{
+		display: inherit;
+		height: auto;
+		
+	}
+	.caption{
+		width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#talkBtn{
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#contactbanner{
+		height: 175px;
+	}
+}
+
+.badge{
+	position: absolute;
+	left: -15px;
+	top: -30px;
+	background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	width: 35px;
+	height: 35px;
+	border-radius: 100px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
 }
