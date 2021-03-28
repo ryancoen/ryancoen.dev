@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width" initial-scale="1">
 <title>Moeller Home Managment | Milwaukee's Premium Home Improvement Service </title>
 <link rel="stylesheet" href="CSS/styles.css" media="screen">
 <link rel="stylesheet" href="CSS/home.css" media="screen">
@@ -10,14 +10,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav> <a href="index.html"><img id="logo" src="images/noTextLogo.png"></a>
-	<a href="index.html"><img id="smalllogo" src="images/smallLogo.png"></a>
+	
+	
+	<div id="myNav" class="overlay">
+  <div class="overlay-content">
+    <a href="HTML/our-story.html">Our Story</a>
+    <a href="HTML/our-services.html">Our Services</a>
+    <a href="HTML/testimonials.html">Testimonials</a>
+    <button id="slideButton"><a href="HTML/contact-us.html">Contact</a></button>
+  </div>
+</div>
+	
+<nav> 
+	<div id="MenuButton" class="container" onclick="toggleNav();myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+	<a href="index.html"><img class="selected" id="logo" src="images/noTextLogo.png"></a>
   <div id="menuDiv">
     <ul id="menu">
-		 <div class="dropdown">
-    <li class="dropbtn">Menu</li>
-    <div align="center" class="dropdown-content"> <a href="HTML/our-story.html">Our Story</a> <a href="HTML/our-services.html">Our Services</a> <a href="HTML/testimonials.html">Testimonials</a> </div>
-  </div>
       <a href="HTML/our-story.html">
       <li class="menuItem">Our Story</li>
       </a> <a href="HTML/our-services.html">
@@ -117,7 +129,32 @@
     <h2>Connect With Us:</h2>
     <img src="images/fb.png"> <img src="images/ins.png"> </div>
   <img id="logo2" src="images/logo2.png">
-  <p style="color: white" align="center">© Moeller Home Management 2021</p>
+  <p style="color: white" align="center">© Moeller Home Management 2021/Design by Ryan Coen</p>
 </div>
 </body>
+		<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+	<script>
+
+var nav = false;		
+		
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+	nav = true;
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+	nav = false;
+}
+		
+function toggleNav() {
+      nav ? closeNav() : openNav();
+    }		
+		
+</script>
+
 </html>

@@ -1,9 +1,9 @@
 html, body {
-   width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-	background-color: #000;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #000;
 }
 nav {
   height: 60px;
@@ -13,8 +13,8 @@ nav {
   padding: 10px;
   background-color: rgba(255, 255, 255, 1);
   display: flex;
-  align-content: center;
-	box-shadow: 0px 5px 5px rgba(0,0,0,.25);
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
 }
 #hiddenMenu {
   height: 80px;
@@ -25,27 +25,23 @@ nav {
   background-color: rgba(255, 255, 255, 1);
   width: 100%;
   height: auto;
-	padding-top: 25px;
-	padding-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 #logo {
   height: 65px;
-  position: relative;
   display: block;
-  top: -3px;
 }
-
 #smalllogo {
   height: 65px;
   position: relative;
   display: block;
   top: -3px;
 }
-
 #menuDiv {
   position: absolute;
-  right: 50px;
-top: 0px;
+  right: 40px;
+  top: 0px;
 }
 #menuDiv a {
   text-decoration: none;
@@ -57,7 +53,7 @@ top: 0px;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 300;
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 .menuItem {
   margin-left: 20px;
@@ -68,39 +64,70 @@ top: 0px;
   border-bottom: 2px solid #34618F;
 }
 #contactBtn {
-  background-image: linear-gradient(45deg, rgba(138,101,49,1) 0%, rgba(255,187,92,1) 100%);
+  background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
   color: #fff;
   font-weight: 500;
   margin-left: 20px;
   padding: 10px;
-	letter-spacing: 2px;
-	background-size: 200% 100%;
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-	box-shadow: 0px 5px 5px rgba(0,0,0,.25);
+  letter-spacing: 2px;
+  background-size: 200% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+}
+.btn:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
-.btn:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+#slideButton {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  border-style: none;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
+  width: 300px;
+  height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background-size: 200% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+}
+#slideButton:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#slideButton a{
+	transform: translateY(-15px);
 }
 
 #footer {
-  height: 420px;
-	width: 100%;
+  height: auto;
+  width: 100%;
   background-color: #34618F;
 }
 #footerContainer {
   display: flex;
   justify-content: space-between;
   max-width: 500px;
-	width:  90%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -126,11 +153,13 @@ top: 0px;
 .footerCol {
   width: 200px;
   color: white;
+	margin-left: 20px;
 }
 #footer p {
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
-	margin: 5px;
+  margin: 5px;
+	padding-bottom: 25px;
 }
 h4 {
   font-family: 'Raleway', sans-serif;
@@ -153,83 +182,100 @@ ul {
   left: 50%;
   transform: translateX(-50%);
 }
-
-.footerCol a{
-	text-decoration: none;
-	color: white;
-}
-
-@media only screen and (max-width: 500px) {
-	#logo{display: none}
-}
-
-@media only screen and (max-width: 350px) {
-	#smalllogo{display: none}
-	.dropdown{
-		
-	}
-}
-
-@media only screen and (min-width: 500px) {
-	#smalllogo{display: none}
-}
-
-@media only screen and (max-width: 875px) {
-	.menuItem{
-		display: none;
-	}
-}
-
-@media only screen and (min-width: 875px) {
-	.dropbtn{
-		display: none;
-	}
-}
-
-/* Dropdown Button */
-.dropbtn {
- height: 50px;
-  border: none;
-font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-	text-transform: uppercase;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  display: inline-block;
-		position: absolute;
-	right: 170px;
-	top: 28px;
-font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-	margin-top: 2px;
-
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 150px;
-box-shadow: 0px 5px 5px rgba(0,0,0,.25);
-  z-index: 1;
-		transform: translateX(-50px);
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.footerCol a {
   text-decoration: none;
-  display: block;
+  color: white;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+@media only screen and (max-width: 500px) {
+  #logo {
+    display: none
+  }
+}
+@media only screen and (max-width: 350px) {
+  #smalllogo {
+    display: none
+  }
+}
+@media only screen and (min-width: 500px) {
+  #smalllogo {
+    display: none
+  }
+}
+@media only screen and (max-width: 875px) {
+  .menuItem {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+ 
+}
+@media only screen and (min-width: 875px) {
+  #MenuButton {
+    display: none;
+  }
+}
+#MenuButton {
+  position: absolute;
+  left: 20px;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color:#C49047;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
