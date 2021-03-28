@@ -34,6 +34,14 @@ nav {
   display: block;
   top: -3px;
 }
+
+#smalllogo {
+  height: 65px;
+  position: relative;
+  display: block;
+  top: -3px;
+}
+
 #menuDiv {
   position: absolute;
   right: 50px;
@@ -151,7 +159,20 @@ ul {
 	color: white;
 }
 
+@media only screen and (max-width: 500px) {
+	#logo{display: none}
+}
 
+@media only screen and (max-width: 350px) {
+	#smalllogo{display: none}
+	.dropdown{
+		
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	#smalllogo{display: none}
+}
 
 @media only screen and (max-width: 875px) {
 	.menuItem{
@@ -179,7 +200,7 @@ font-family: 'Raleway', sans-serif;
 .dropdown {
   display: inline-block;
 		position: absolute;
-	right: 180px;
+	right: 170px;
 	top: 28px;
 font-family: 'Raleway', sans-serif;
   font-size: 18px;
