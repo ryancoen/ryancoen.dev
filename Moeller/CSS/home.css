@@ -39,13 +39,11 @@ button:hover {
   text-transform: uppercase;
   font-size: 25px;
 }
-
-#sliderCover{
-	position: absolute;
-	 width: 100vw;
+#sliderCover {
+  position: absolute;
+  width: 100vw;
   height: 100vh;
 }
-
 #welcomeBanner {
   position: absolute;
   z-index: 10;
@@ -56,7 +54,8 @@ button:hover {
   border-radius: 15px;
   color: white;
   opacity: 1;
-  animation: fadeInAnimation ease 3s; animation-iteration-count: 1;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 @keyframes fadeInAnimation {
@@ -148,6 +147,7 @@ button:hover {
   font-family: 'Raleway', sans-serif;
   color: black;
   position: relative;
+  display: block;
 }
 .text-box {
   display: inline-block;
@@ -404,7 +404,7 @@ button:hover {
 #descContainer {
   height: auto;
   background-color: #fff;
-	margin-top: -1px;
+  margin-top: -1px;
 }
 #descContainer h2 {
   margin: 0;
@@ -460,19 +460,46 @@ button:hover {
 }
 @media only screen and (max-width: 600px) {
   #welcomeBanner {
-    width: 400px;
+    width: 300px;
   }
   #welcomeBanner img {
-    width: 400px;
+    width: 300px;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 500px) {
+  .caption {
+    display: none;
+  }
+  #contactbanner {
+    display: none;
+  }
+  #descContainer {
+    padding-top: 25px;
+  }
+  #contactbanner {
+    display: none;
+  }
+  #talkBtn {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+	#talkBtn{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 875px) {
   #innerDescContain {
     display: inherit;
   }
   .savings {
     width: 70%;
-    max-height: 150px;
+    min-height: 150px;
+	max-height: 180px;
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -483,10 +510,12 @@ button:hover {
   }
   .caption {
     width: 400px;
+    font-size: 40px;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
   }
-  #talkBtn {
+  .talkBtn {
     width: 300px;
     margin-left: auto;
     margin-right: auto;

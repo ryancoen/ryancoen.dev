@@ -152,13 +152,14 @@ ul {
 }
 
 
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 875px) {
 	.menuItem{
 		display: none;
 	}
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 875px) {
 	.dropbtn{
 		display: none;
 	}
@@ -178,7 +179,7 @@ font-family: 'Raleway', sans-serif;
 .dropdown {
   display: inline-block;
 		position: absolute;
-	right: 200px;
+	right: 180px;
 	top: 28px;
 font-family: 'Raleway', sans-serif;
   font-size: 18px;
