@@ -1,37 +1,17 @@
-#topBanner {
-  background-image: url("../images/stockImage1.jpg");
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-}
-#innerBanner {
-  position: absolute;
-  top: 190px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#bannerHeader {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-size: 45px;
-	color: white;
-	margin: 0;
-}
-#topBanner p {
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
-  font-weight: 300;
-  font-size: 1.2em;
-	margin-top: 10px;
-}
 p {
   font-size: 1.125rem;
 }
 h1, p {
   margin-top: 0;
+}
+
+h1{
+	  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+  font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 5px
+	
 }
 label {
   display: flex;
@@ -42,10 +22,13 @@ label {
 #formContainer {
   justify-content: center;
   display: flex;
+	padding-top: 25PX;
 }
 #survey-form {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
+	width: 90%;
+	max-width: 700px;
 }
 #survey-form h2 {
   margin-top: 0px;
@@ -70,9 +53,9 @@ label {
 }
 .form-control {
   display: block;
-  width: 100%;
+  width: 95%;
   height: 2.375rem;
-  padding: 0.475rem 0.85rem;
+	padding-left: 10px;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
@@ -94,7 +77,7 @@ label {
 }
 .input-textarea {
   min-height: 120px;
-  width: 100%;
+  width: 95%;
   padding: 0.625rem;
   resize: vertical;
   font-size: 14px;
@@ -130,27 +113,38 @@ label {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-#contactCard {
-  position: relative;
-  left: 20px;
-  height: 220px;
-  width: 350px;
-  background: linear-gradient(209deg, rgba(130, 169, 208, 1) 0%, rgba(51, 96, 144, 1) 59%);
-  margin-left: 20px;
-  color: white;
-  top: 53px;
-  padding: 25px;
-  border-radius: 10px;
-	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+
+#contactBottom{
+	 font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
 }
-#contactCard img {
-  filter: invert(1);
-  width: 40px;
-  height: 40px;
+
+#contactBottom a{
+		text-decoration: none;
+	color: inherit;
 }
-#contactCard h2 {
-  margin-top: 0px;
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 35px
+  }
+	#contactBottom p{
+		font-size: 15px
+	}
 }
-#contactCard li {
-  margin-bottom: 10px;
+
+@media only screen and (max-width: 350px) {
+	.submit-button{
+		width: 200px;
+	}
+	#innerForm-group{
+		display: block;
+	}
 }
+

@@ -11,7 +11,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav> <a href="../index.html"><img id="logo" src="../images/noTextLogo.png"></a>
+<div id="myNav" class="overlay">
+  <div class="overlay-content"> <a href="../HTML/our-story.html">Our Story</a> <a href="../HTML/our-services.html">Our Services</a> <a href="../HTML/testimonials.html">Testimonials</a>
+    <button id="slideButton">
+    <a href="../HTML/contact-us.html">Contact</a>
+    </button>
+  </div>
+  <img id="overlayLogo" src="../images/noTextLogoWhite.png"> </div>
+<nav>
+  <div id="MenuButton" class="container" onclick="toggleNav();myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <a href="../index.html"><img class="selected" id="logo" src="../images/noTextLogo.png"></a>
   <div id="menuDiv">
     <ul id="menu">
       <a href="../HTML/our-story.html">
@@ -21,31 +34,16 @@
       </a> <a href="../HTML/testimonials.html">
       <li class="menuItem">Testimonials</li>
       </a> <a href="../HTML/contact-us.html">
-      <li id="contactBtn">Contact Us</li>
+      <li id="contactBtn" class="btn">Contact</li>
       </a>
     </ul>
   </div>
 </nav>
 <div id="hiddenMenu"></div>
 	<div id="mainContainer">
-		<div id="TopBanner">
-	<h1>About Us</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum pretium tincidunt. </p></div>
-	</div>
-	<div id="container">
-	<div id="paraContainer">
-		<div class="para">
-		<h2>Striving for perfection</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum pretium tincidunt. Sed bibendum tempor lectus et imperdiet. Aliquam erat volutpat. Suspendisse ut metus tellus. Suspendisse varius, sapien in feugiat aliquam, velit elit eleifend est, et efficitur nunc odio in diam. Praesent dignissim bibendum dui, vel posuere odio laoreet at. </p>
-		</div>
-		</div>
-	</div>
-	<div id="container3">
-	<div id="innerDiv3">
-		
-		<h2>Our<br>House<br>is<br>your<br>Home</h2>
-		</div>
-	</div>
+		<div class="div-one"></div>
+
+<div class="div-two" ></div>
 	<div id="container2">
 	<div id="innerProfile">
 		<img id="profileImg" src="../images/129287357_101027188549076_9151431049299702872_n.jpg">

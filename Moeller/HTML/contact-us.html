@@ -11,13 +11,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav> <a href="../index.html"><img id="logo" src="../images/noTextLogo.png"></a>
+<div id="myNav" class="overlay">
+  <div class="overlay-content"> <a href="../HTML/our-story.html">Our Story</a> <a href="../HTML/our-services.html">Our Services</a> <a href="../HTML/testimonials.html">Testimonials</a>
+    <button id="slideButton">
+    <a href="../HTML/contact-us.html">Contact</a>
+    </button>
+  </div>
+  <img id="overlayLogo" src="../images/noTextLogoWhite.png"> </div>
+<nav>
+  <div id="MenuButton" class="container" onclick="toggleNav();myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <a href="../index.html"><img class="selected" id="logo" src="../images/noTextLogo.png"></a>
   <div id="menuDiv">
     <ul id="menu">
-		<div class="dropdown">
-    <li class="dropbtn">Menu</li>
-    <div align="center" class="dropdown-content"> <a href="../HTML/our-story.html">Our Story</a> <a href="../HTML/our-services.html">Our Services</a> <a href="../HTML/testimonials.html">Testimonials</a> </div>
-  </div>
       <a href="../HTML/our-story.html">
       <li class="menuItem">Our Story</li>
       </a> <a href="../HTML/our-services.html">
@@ -25,23 +34,16 @@
       </a> <a href="../HTML/testimonials.html">
       <li class="menuItem">Testimonials</li>
       </a> <a href="../HTML/contact-us.html">
-      <li id="contactBtn" class="btn">Contact Us</li>
+      <li id="contactBtn" class="btn">Contact</li>
       </a>
     </ul>
   </div>
 </nav>
 <div id="hiddenMenu"></div>
-<div id="topBanner" align="center">
-  <div id="innerBanner">
-    <h1 id="bannerHeader">Contact Us</h1>
-    <p>
-      Let us know which services you're interested in.<br> We'll take care of the rest. </p>
-  </div>
-</div>
 <div id="mainContainer">
   <div id="formContainer">
     <form id="survey-form">
-      <h2>Contact Form</h2>
+      <h1>Contact Us</h1>
       <div class="form-group">
         <input
         type="text"
@@ -74,13 +76,13 @@
       </div>
       <div class="form-group">
         <p>Which option best describes your home?</p>
-        <select id="dropdown" name="role" class="form-control" required>
+        <select id="dropdown" name="home type" class="form-control" required>
           <option disabled selected value>Select current role</option>
-          <option value="student">Designing</option>
-          <option value="job">Building</option>
-          <option value="learner">Remodeling</option>
-          <option value="preferNo">Finished</option>
-          <option value="other">Multiple Units</option>
+          <option value="designing">Designing</option>
+          <option value="building">Building</option>
+          <option value="remodeling">Remodeling</option>
+          <option value="finished">Finished</option>
+          <option value="multiple">Multiple Units</option>
         </select>
       </div>
       <div class="form-group">
@@ -88,33 +90,33 @@
         <div id="innerForm-group">
           <div class="svcCol">
             <label>
-              <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>
+              <input name="prefer" value="cleaning" type="checkbox" class="input-checkbox"/>
               Cleaning</label>
             <label>
-              <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"/>
+              <input name="prefer" value="construction" type="checkbox" class="input-checkbox"/>
               Construction</label>
             <label>
-              <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>
+              <input name="prefer" value="design" type="checkbox" class="input-checkbox"/>
               Design</label>
             <label>
-              <input name="prefer" value="challenges" type="checkbox" class="input-checkbox"/>
+              <input name="prefer" value="installation" type="checkbox" class="input-checkbox"/>
               Installation</label>
-			  <label>
-              <input name="prefer" value="challenges" type="checkbox" class="input-checkbox"/>
+            <label>
+              <input name="prefer" value="landscaping" type="checkbox" class="input-checkbox"/>
               Landscaping</label>
           </div>
           <div class="svcCol">
             <label>
-              <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox"/>
+              <input name="prefer" value="maintenance/repair" type="checkbox" class="input-checkbox"/>
               Maintenance and Repair</label>
             <label>
-              <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox"/>
+              <input name="prefer" value="security" type="checkbox" class="input-checkbox"/>
               Security</label>
             <label>
-              <input name="prefer" value="videos" type="checkbox" class="input-checkbox"/>
+              <input name="prefer" value="technology" type="checkbox" class="input-checkbox"/>
               Technology/Smart Home</label>
             <label>
-              <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox"/>
+              <input name="prefer" value="other" type="checkbox" class="input-checkbox"/>
               Other <span class="clue">(Specify in comments)</span></label>
           </div>
         </div>
@@ -131,43 +133,65 @@
       <div class="form-group">
         <button type="submit" id="submit" class="submit-button"> Submit </button>
       </div>
+      <div id="contactBottom">
+        <h1>Contact Information</h1>
+        <a href="tel:262-689-5817">
+        <p><b>PHONE: </b>(262) 689-5817</p>
+        </a> <a href="mailto:bill@moellerhomemanagement.com?subject=Moeller Inquery">
+        <p><b>EMAIL: </b>bill@moellerhomemanagement.com</p>
+        </a> <a href="http://maps.google.com/maps?q=11539+N+parkview+dr,+Mequon,+WI+53092">
+        <p><b>ADDRESS: </b>11539 N Parkview Dr
+          Mequon, WI, WI 53092</p>
+        </a> <a href="../Data/Moeller Home Management Business Card.vcf" download="Moeller Home Management Business Card">
+        <p><b>DOWNLOAD BUSINESS CARD</b></p>
+        </a> </div>
     </form>
-    <div id="contactCard">
-      <h2>Moeller Home Management</h2>
-      <ul>
-        <li><b>Phone:</b> (262) 689-5817</li>
-        <li><b>Email:</b> Bill@moellerhomemanagement.com</li>
-        <li><b>Address:</b> 11539 N Parkview Dr<br>Mequon, WI, WI 53092</li>
-        <li><b>Contact Card:</b> Download CSV</li>
-      </ul>
-      <a href="https://www.facebook.com/MoellerHomeManagement/"><img src="../images/fb.png"> <img src="../images/ins.png"></a> </div>
   </div>
 </div>
 <div id="footer">
   <div id="footerContainer">
-    <div class="footerCol">
-      <a href=""><h4>Services</h4></a>
+    <div class="footerCol"> <a href="">
+      <h4>Services</h4>
+      </a>
       <ul>
-		  <a href=""><li>Cleaning</li></a>
-        <a href=""> <li>Construction</li></a>
-        <a href=""> <li>Design</li></a>
-        <a href=""> <li>Installation</li></a>
-         <a href=""><li>Landscaping</li></a>
-         <a href=""><li>Maintenance and Repair</li></a>
-         <a href=""><li>Security</li></a>
-         <a href=""><li>Tech</li></a>
+        <a href="">
+        <li>Cleaning</li>
+        </a> <a href="">
+        <li>Construction</li>
+        </a> <a href="">
+        <li>Design</li>
+        </a> <a href="">
+        <li>Installation</li>
+        </a> <a href="">
+        <li>Landscaping</li>
+        </a> <a href="">
+        <li>Maintenance and Repair</li>
+        </a> <a href="">
+        <li>Security</li>
+        </a> <a href="">
+        <li>Tech</li>
+        </a>
       </ul>
     </div>
-    <div class="footerCol">
-       <a href=""><h4>Our Company</h4></a>
+    <div class="footerCol"> <a href="">
+      <h4>Our Company</h4>
+      </a>
       <ul>
-        <a href=""> <li>Our Story</li></a>
-        <a href=""> <li>Community</li></a>
+        <a href="">
+        <li>Our Story</li>
+        </a> <a href="">
+        <li>Community</li>
+        </a>
       </ul>
-       <a href=""><h4>Questions?</h4></a>
+      <a href="">
+      <h4>Questions?</h4>
+      </a>
       <ul>
-         <a href=""><li>FAQ/How it works</li></a>
-         <a href=""><li>Contact Us</li></a>
+        <a href="">
+        <li>FAQ/How it works</li>
+        </a> <a href="">
+        <li>Contact Us</li>
+        </a>
       </ul>
     </div>
   </div>
@@ -178,4 +202,25 @@
   <p style="color: white" align="center">© Moeller Home Management 2021 / Design by Ryan Coen </p>
 </div>
 </body>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+var nav = false;		
+		
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+	nav = true;
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+	nav = false;
+}
+		
+function toggleNav() {
+      nav ? closeNav() : openNav();
+    }		
+		
+</script>
 </html>

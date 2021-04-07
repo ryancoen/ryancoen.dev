@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 14.5//EN
+N:Moeller;Bill;;;
+FN:Bill Moeller
+ORG:Moeller Home Management;
+EMAIL;type=INTERNET;type=HOME;type=pref:bill@moellerhomemanagement.com
+TEL;type=CELL;type=VOICE;type=pref:(262) 689-5817
+item1.ADR;type=HOME;type=pref:;;11539 N Parkview Dr;Mequon;WI;53092;United States
+item1.X-ABADR:us
+item2.URL;type=pref:moellerhomemanagement.com
+item2.X-ABLabel:_$!<HomePage>!$_
+END:VCARD

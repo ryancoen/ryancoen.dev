@@ -14,7 +14,7 @@ nav {
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   align-items: center;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  
 }
 #hiddenMenu {
   height: 80px;
@@ -25,7 +25,6 @@ nav {
   background-color: rgba(255, 255, 255, 1);
   width: 100%;
   height: auto;
-  padding-top: 25px;
   padding-bottom: 25px;
 }
 #logo {
@@ -47,6 +46,24 @@ nav {
   text-decoration: none;
   color: black;
 }
+
+.menuItem:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #C49047;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuItem:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 #menu {
   display: flex;
   list-style: none;
@@ -54,14 +71,13 @@ nav {
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
+
 }
 .menuItem {
   margin-left: 20px;
   padding: 10px;
   transition: 0.3s;
-}
-.menuItem:hover {
-  border-bottom: 2px solid #34618F;
+		position: relative;
 }
 #contactBtn {
   background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
@@ -89,12 +105,12 @@ nav {
 #slideButton {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  font-weight: 800;
+   font-weight: 500;
   border-style: none;
   padding: 10px;
   color: white;
   background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
-  width: 300px;
+  width: 175px;
   height: 50px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -163,17 +179,17 @@ nav {
 }
 h4 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
 }
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   color: white;
 }
 ul {
   list-style-type: none;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   padding: 0;
 }
 #logo2 {
@@ -190,7 +206,26 @@ ul {
   #logo {
     display: none
   }
+	nav{
+		height: 40px;
+	}
+	#menuDiv{
+		top: -10px;
+	}
+	#hiddenMenu{
+		height: 55px;
+	}
+	#contactBtn{
+		margin-top: 2px;
+	}
 }
+
+@media only screen and (max-width: 875px) and (min-width: 500px) {
+ #logo{
+		transform: translateX(-10px);
+	}
+}
+
 @media only screen and (max-width: 350px) {
   #smalllogo {
     display: none
@@ -210,6 +245,40 @@ ul {
   }
  
 }
+
+#messageContainer{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 20px;
+	right: 20px;
+	background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
+	border-radius: 50px;
+	display: flex;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	background-size: 200% 100%;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+#messageContainer:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#messageIcon{
+	width: 35px;
+	height: 35px;
+  margin: auto;
+  display: block;
+	transform: translateX(-1px);
+	
+}
+
 @media only screen and (min-width: 875px) {
   #MenuButton {
     display: none;
@@ -239,15 +308,14 @@ ul {
   margin-top: 30px;
 }
 .overlay a {
-  padding: 8px;
+  padding: 20px;
   text-decoration: none;
-  font-size: 36px;
+    font-size: 18px;
   color: #fff;
   display: block;
   transition: 0.3s;
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
-	font-weight: 300;
 }
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
@@ -278,4 +346,16 @@ ul {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#overlayLogo{
+	position: absolute;
+	bottom: 10px;
+	width: 200px;
+	margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+	opacity: 50%;
 }
