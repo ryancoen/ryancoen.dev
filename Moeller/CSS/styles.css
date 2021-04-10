@@ -16,7 +16,7 @@ nav {
   align-items: center;
 }
 #hiddenMenu {
-  height: 80px;
+  height: 40px;
   width: 100%;
   background-color: #fff;
 }
@@ -205,9 +205,6 @@ ul {
   }
   #hiddenMenu {
     height: 55px;
-  }
-  #contactBtn {
-    margin-top: 2px;
   }
 }
 @media only screen and (max-width: 875px) and (min-width: 500px) {
