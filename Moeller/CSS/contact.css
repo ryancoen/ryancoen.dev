@@ -22,7 +22,7 @@ label {
 #formContainer {
   justify-content: center;
   display: flex;
-	padding-top: 25PX;
+	padding: 25px
 }
 #survey-form {
   font-family: 'Raleway', sans-serif;
@@ -132,7 +132,7 @@ label {
 
 @media only screen and (max-width: 500px) {
   h1 {
-    font-size: 35px
+    font-size: 30px
   }
 	#contactBottom p{
 		font-size: 15px

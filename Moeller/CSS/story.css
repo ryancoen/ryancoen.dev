@@ -1,72 +1,133 @@
-.div-one {
-  background:red;
+#BannerContainer {
   width: 100vw;
   height: 100vh;
-   background: url('../images/Taupe-sofa.jpeg');
-  width: 100vw;
-  height: 100vh;
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
-	position: absolute;
+  background-color: transparent;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+#BannerContainer h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+.div-one {
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/Taupe-sofa.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
 .div-two {
   -webkit-clip-path: polygon(100vw 0, 0% 100%, 80vw 100vh);
   clip-path: polygon(100vw 0, 0% 100vh, 100vw 100vh);
   background: url('../images/featured-image-kitchen-layouts.jpeg');
   width: 100vw;
   height: 100vh;
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+#milwaukee {
+  background-image: url("../images/explore2.jpg");
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#innerMilwaukee {
+  width: 80%;
+  height: 80%;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
 }
 
-#container2{
-	height: 250px;
-	background-color: rgba(255, 255, 255, .95);
+#innerMilwaukee h1{
+	margin: 0;
+	transform: translateY(200px);
+	background-color: rgba(50,22,22,.60);
+	color: white;
+		padding: 20px;
 }
 
-#profileImg{
-	width: 200px;
-	height: 200px;
-	flex-shrink: 0;
-	border-radius: 150px;
-	border: 3px solid black;
-	margin-top: 20px;
-}
+#innerMilwaukee p {
+  font-size: 20px;
+	right: 10px;
+	transform: translateY(180px);
+	background-color: rgba(50,22,22,.60);
+	color: #fff;
+	padding: 20px;
 
-#innerProfile{
-	display: flex;
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: space-between;
-	align-content: center;
-	
 }
-
-#profileDesc{
-	width: 400px;
-		 font-family: 'Raleway', sans-serif;
-	margin-top: 15px;
-	margin-left: 25px;
+#container2 {
+  height: 250px;
+  background-color: #131313;
+  color: #C49047;
 }
-
-#profileDesc p{
-	width: 420px;
+#profileImg {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 150px;
+  border: 3px solid #C49047;
+  margin-top: 20px;
 }
-
-#profileDesc h3{
-	text-transform: uppercase;
-	font-size: 25px;
-	margin-bottom: 0px;
-	font-weight: 800;
+#innerProfile {
+  display: flex;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-content: center;
 }
+#profileDesc {
+  width: 400px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+#profileDesc p {
+  width: 420px;
+}
+#profileDesc h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 0px;
+  font-weight: 800;
+}
+#profileDesc h4 {
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+#explainer {
+  font-family: 'Raleway', sans-serif;
+	background-color: #131314;
+	padding-top: 25px;
 
-#profileDesc h4{
-margin-top: 0px;
-	text-transform: uppercase;
-	font-size: 20px;
-		font-weight: 500;
+}
+#explainer h1 {
+font-size: 26px;
+		text-transform:uppercase;
+	color: #fff;
+	margin: 0;
+}
+#explainer p {
+  width: 60%;
+  max-width: 600px;
+	color: #fff;
+}
+#explainer img {
+  width: 85%;
+  max-width: 1000px;
 }

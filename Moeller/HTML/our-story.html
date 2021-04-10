@@ -2,13 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Moeller Home Managment | Our Story </title>
+<title>Moeller Home Management | Our Story </title>
 <link rel="stylesheet" href="../CSS/styles.css" media="screen">
-	<link rel="stylesheet" href="../CSS/story.css" media="screen">
+<link rel="stylesheet" href="../CSS/story.css" media="screen">
 <!--Google Fonts-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="myNav" class="overlay">
@@ -39,46 +38,80 @@
     </ul>
   </div>
 </nav>
-<div id="hiddenMenu"></div>
-	<div id="mainContainer">
-		<div class="div-one"></div>
-
-<div class="div-two" ></div>
-	<div id="container2">
-	<div id="innerProfile">
-		<img id="profileImg" src="../images/129287357_101027188549076_9151431049299702872_n.jpg">
-		<div id="profileDesc">
-		<h3>Meet the Owner</h3>
-		<h4>Bill Moeller</h4>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum pretium tincidunt. Sed bibendum tempor lectus et imperdiet. Aliquam erat volutpat. Praesent dignissim bibendum dui, vel posuere odio laoreet at.</p>
-		</div>
-		</div>
-	</div>
+<div id="mainContainer">
+  <div id="BannerContainer">
+    <h1>Our Story</h1>
+  </div>
+  <div class="div-one"></div>
+  <div class="div-two" ></div>
+  <div id="milwaukee">
+    <div id="innerMilwaukee">
+      <h1>Est. in Milwaukee, WI</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum pretium tincidunt. Sed bibendum tempor lectus et imperdiet. Aliquam erat volutpat. Praesent dignissim bibendum dui, vel posuere odio laoreet at.</p>
+    </div>
+  </div>
+  <div id="explainer" align="center">
+    <h1>We believe home improvement should be easy</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum pretium tincidunt. Sed bibendum tempor lectus et imperdiet. Aliquam erat volutpat. Praesent dignissim bibendum dui, vel posuere odio laoreet at.</p>
+    <img src="../images/5.jpg">
+    <h1>A custom concierge taylored to your every need</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum pretium tincidunt. Sed bibendum tempor lectus et imperdiet. Aliquam erat volutpat. Praesent dignissim bibendum dui, vel posuere odio laoreet at.</p>
+    <img src="../images/8.jpg"> </div>
+  <div id="container2">
+    <div id="innerProfile"> <img id="profileImg" src="../images/129287357_101027188549076_9151431049299702872_n.jpg">
+      <div id="profileDesc">
+        <h3>Meet the Owner</h3>
+        <h4>Bill Moeller</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum pretium tincidunt. Sed bibendum tempor lectus et imperdiet. Aliquam erat volutpat. Praesent dignissim bibendum dui, vel posuere odio laoreet at.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="messageContainer"> <img id="messageIcon" src="../images/message.png"> </div>
 <div id="footer">
   <div id="footerContainer">
-    <div class="footerCol">
-      <a href=""><h4>Services</h4></a>
+    <div class="footerCol"> <a href="">
+      <h4>Services</h4>
+      </a>
       <ul>
-		  <a href=""><li>Cleaning</li></a>
-        <a href=""> <li>Construction</li></a>
-        <a href=""> <li>Design</li></a>
-        <a href=""> <li>Installation</li></a>
-         <a href=""><li>Landscaping</li></a>
-         <a href=""><li>Maintenance and Repair</li></a>
-         <a href=""><li>Security</li></a>
-         <a href=""><li>Tech</li></a>
+        <a href="">
+        <li>Cleaning</li>
+        </a> <a href="">
+        <li>Construction</li>
+        </a> <a href="">
+        <li>Design</li>
+        </a> <a href="">
+        <li>Installation</li>
+        </a> <a href="">
+        <li>Landscaping</li>
+        </a> <a href="">
+        <li>Maintenance and Repair</li>
+        </a> <a href="">
+        <li>Security</li>
+        </a> <a href="">
+        <li>Tech</li>
+        </a>
       </ul>
     </div>
-    <div class="footerCol">
-       <a href=""><h4>Our Company</h4></a>
+    <div class="footerCol"> <a href="">
+      <h4>Our Company</h4>
+      </a>
       <ul>
-        <a href=""> <li>Our Story</li></a>
-        <a href=""> <li>Community</li></a>
+        <a href="">
+        <li>Our Story</li>
+        </a> <a href="">
+        <li>Community</li>
+        </a>
       </ul>
-       <a href=""><h4>Questions?</h4></a>
+      <a href="">
+      <h4>Questions?</h4>
+      </a>
       <ul>
-         <a href=""><li>FAQ/How it works</li></a>
-         <a href=""><li>Contact Us</li></a>
+        <a href="">
+        <li>FAQ/How it works</li>
+        </a> <a href="">
+        <li>Contact Us</li>
+        </a>
       </ul>
     </div>
   </div>
@@ -89,4 +122,25 @@
   <p style="color: white" align="center">© Moeller Home Management 2021 / Design by Ryan Coen </p>
 </div>
 </body>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+var nav = false;		
+		
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+	nav = true;
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+	nav = false;
+}
+		
+function toggleNav() {
+      nav ? closeNav() : openNav();
+    }		
+		
+</script>
 </html>

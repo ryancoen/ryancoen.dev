@@ -8,10 +8,22 @@
 <!--Google Fonts-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav> <a href="../index.html"><img id="logo" src="../images/noTextLogo.png"></a>
+<div id="myNav" class="overlay">
+  <div class="overlay-content"> <a href="../HTML/our-story.html">Our Story</a> <a href="../HTML/our-services.html">Our Services</a> <a href="../HTML/testimonials.html">Testimonials</a>
+    <button id="slideButton">
+    <a href="../HTML/contact-us.html">Contact</a>
+    </button>
+  </div>
+  <img id="overlayLogo" src="../images/noTextLogoWhite.png"> </div>
+<nav>
+  <div id="MenuButton" class="container" onclick="toggleNav();myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <a href="../index.html"><img class="selected" id="logo" src="../images/noTextLogo.png"></a>
   <div id="menuDiv">
     <ul id="menu">
       <a href="../HTML/our-story.html">
@@ -21,23 +33,16 @@
       </a> <a href="../HTML/testimonials.html">
       <li class="menuItem">Testimonials</li>
       </a> <a href="../HTML/contact-us.html">
-      <li id="contactBtn" class="btn">Contact Us</li>
+      <li id="contactBtn" class="btn">Contact</li>
       </a>
     </ul>
   </div>
 </nav>
 <div id="hiddenMenu"></div>
-		<div id="topBanner" align="center">
-  <div id="innerBanner">
-    <h1 id="bannerHeader">Testimonials</h1>
-    <p>
-      Our customers love us. We'll prove it. </p>
-  </div>
-</div>
 <div id="mainContainer">
-
-	<div class="parent"> 
-
+	<div align="center" id="temp">
+<h1>Coming soon</h1>
+	<p>Check back soon for updates from our clients</p>
 </div>
 	
 	</div>
