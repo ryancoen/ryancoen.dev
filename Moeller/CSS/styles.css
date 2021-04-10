@@ -166,8 +166,7 @@ nav {
 #footer p {
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
-  margin: 5px;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
 }
 h4 {
   font-family: 'Raleway', sans-serif;
@@ -249,6 +248,7 @@ ul {
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+	z-index: 20;
 }
 #messageContainer:hover {
   background-position: 100% 0;
