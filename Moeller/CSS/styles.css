@@ -38,8 +38,8 @@ nav {
 }
 #menuDiv {
   position: absolute;
-  right: 25px;
-  top: -10px;
+  right: 30px;
+  top: -9px;
 }
 #menuDiv a {
   text-decoration: none;
@@ -87,7 +87,6 @@ nav {
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
 }
 .btn:hover {
   background-position: 100% 0;
@@ -101,12 +100,11 @@ nav {
   font-size: 20px;
   font-weight: 500;
   border-style: none;
-  padding: 10px;
   color: white;
   background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
-  width: 175px;
+  width: 125px;
   height: 50px;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   background-size: 200% 100%;
   border-radius: 50px;
@@ -114,7 +112,7 @@ nav {
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	padding-top: 8px;
 }
 #slideButton:hover {
   background-position: 100% 0;
@@ -129,7 +127,7 @@ nav {
 #footer {
   height: auto;
   width: 100%;
-  background-color: #34618F;
+  background-color: rgba(18,97,160,1.00);
 }
 #footerContainer {
   display: flex;
@@ -239,7 +237,7 @@ ul {
   background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
   border-radius: 50px;
   display: flex;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  box-shadow: 0px 5px 15px  rgba(0, 0, 0, .55);
   background-size: 200% 100%;
   moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -290,7 +288,8 @@ ul {
   margin-top: 30px;
 }
 .overlay a {
-  padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
   text-decoration: none;
   font-size: 18px;
   color: #fff;
@@ -301,11 +300,6 @@ ul {
 }
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
-}
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px
-  }
 }
 .container {
   display: inline-block;
@@ -319,8 +313,8 @@ ul {
   transition: 0.4s;
 }
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+  transform: rotate(-45deg) translate(-8px, 7px);
 }
 .change .bar2 {
   opacity: 0;

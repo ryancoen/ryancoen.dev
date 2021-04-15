@@ -2,16 +2,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Moeller Home Managment | Our Services </title>
+<title>Moeller Home Management | Our Services </title>
 <link rel="stylesheet" href="../CSS/styles.css" media="screen">
-	<link rel="stylesheet" href="../CSS/services.css" media="screen">
+<link rel="stylesheet" href="../CSS/services.css" media="screen">
 <!--Google Fonts-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav> <a href="../index.html"><img id="logo" src="../images/noTextLogo.png"></a>
+<div id="myNav" class="overlay">
+  <div class="overlay-content"> <a href="../index.html">Home</a><a href="../HTML/our-story.html">Our Story</a> <a href="../HTML/our-services.html">Our Services</a> <a href="../HTML/testimonials.html">Testimonials</a>
+    <button id="slideButton">
+    <a href="../HTML/contact-us.html">Contact</a>
+    </button>
+  </div>
+  <img id="overlayLogo" src="../images/noTextLogoWhite.png"> </div>
+<nav>
+  <div id="MenuButton" class="container" onclick="toggleNav();myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <a href="../index.html"><img class="selected" id="logo" src="../images/noTextLogo.png"></a>
   <div id="menuDiv">
     <ul id="menu">
       <a href="../HTML/our-story.html">
@@ -21,38 +33,134 @@
       </a> <a href="../HTML/testimonials.html">
       <li class="menuItem">Testimonials</li>
       </a> <a href="../HTML/contact-us.html">
-      <li id="contactBtn">Contact Us</li>
+      <li id="contactBtn" class="btn">Contact</li>
       </a>
     </ul>
   </div>
 </nav>
 <div id="hiddenMenu"></div>
-	<div id="mainContainer"></div>
-<div id="footer">
-  <div id="footerContainer">
-    <div class="footerCol">
-      <a href=""><h4>Services</h4></a>
+<div id="mainContainer">
+  <div id="BannerContainer">
+    <h1>Our Services</h1>
+  </div>
+  <div class="div-one"></div>
+  <div class="service" id="cleaning">
+    <div class="innerService">
+      <h1>Cleaning & Organization</h1>
       <ul>
-		  <a href=""><li>Cleaning</li></a>
-        <a href=""> <li>Construction</li></a>
-        <a href=""> <li>Design</li></a>
-        <a href=""> <li>Installation</li></a>
-         <a href=""><li>Landscaping</li></a>
-         <a href=""><li>Maintenance and Repair</li></a>
-         <a href=""><li>Security</li></a>
-         <a href=""><li>Tech</li></a>
+        <li>House Keeping</li>
+        <li>Deep Cleaning </li>
+        <li>Duct Work</li>
+        <li>Power Washing</li>
+        <li>Five</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
       </ul>
     </div>
-    <div class="footerCol">
-       <a href=""><h4>Our Company</h4></a>
+	  <div class="innerServiceImg" id="cleaningImg"></div>
+  </div>
+	 <div class="service" id="cleaning">
+    <div class="innerService">
+      <h1>Cleaning & Organization</h1>
       <ul>
-        <a href=""> <li>Our Story</li></a>
-        <a href=""> <li>Community</li></a>
+        <li>House Keeping</li>
+        <li>Deep Cleaning </li>
+        <li>Duct Work</li>
+        <li>Power Washing</li>
+        <li>Five</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
       </ul>
-       <a href=""><h4>Questions?</h4></a>
+    </div>
+	  <div class="innerServiceImg" id="cleaningImg"></div>
+  </div>
+	 <div class="service" id="cleaning">
+    <div class="innerService">
+      <h1>Cleaning & Organization</h1>
       <ul>
-         <a href=""><li>FAQ/How it works</li></a>
-         <a href=""><li>Contact Us</li></a>
+        <li>House Keeping</li>
+        <li>Deep Cleaning </li>
+        <li>Duct Work</li>
+        <li>Power Washing</li>
+        <li>Five</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+      </ul>
+    </div>
+	  <div class="innerServiceImg" id="cleaningImg"></div>
+  </div>
+	 <div class="service" id="cleaning">
+    <div class="innerService">
+      <h1>Cleaning & Organization</h1>
+      <ul>
+        <li>House Keeping</li>
+        <li>Deep Cleaning </li>
+        <li>Duct Work</li>
+        <li>Power Washing</li>
+        <li>Five</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+      </ul>
+    </div>
+	  <div class="innerServiceImg" id="cleaningImg"></div>
+  </div>
+</div>
+<div id="footer">
+  <div id="footerContainer">
+    <div class="footerCol"> <a href="">
+      <h4>Services</h4>
+      </a>
+      <ul>
+        <a href="">
+        <li>Cleaning</li>
+        </a> <a href="">
+        <li>Construction</li>
+        </a> <a href="">
+        <li>Design</li>
+        </a> <a href="">
+        <li>Installation</li>
+        </a> <a href="">
+        <li>Landscaping</li>
+        </a> <a href="">
+        <li>Maintenance and Repair</li>
+        </a> <a href="">
+        <li>Security</li>
+        </a> <a href="">
+        <li>Tech</li>
+        </a>
+      </ul>
+    </div>
+    <div class="footerCol"> <a href="">
+      <h4>Our Company</h4>
+      </a>
+      <ul>
+        <a href="">
+        <li>Our Story</li>
+        </a> <a href="">
+        <li>Community</li>
+        </a>
+      </ul>
+      <a href="">
+      <h4>Questions?</h4>
+      </a>
+      <ul>
+        <a href="">
+        <li>FAQ/How it works</li>
+        </a> <a href="">
+        <li>Contact Us</li>
+        </a>
       </ul>
     </div>
   </div>

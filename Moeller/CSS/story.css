@@ -11,7 +11,7 @@
 #BannerContainer h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 45px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   color: white;
 }
@@ -36,7 +36,7 @@
 }
 #milwaukee {
   background-image: url("../images/explore2.jpg");
-  height: 650px;
+  height: 700px;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -50,40 +50,35 @@
   font-family: 'Raleway', sans-serif;
   color: #000;
 }
-
-#innerMilwaukee h1{
-	margin: 0;
-	transform: translateY(20px);
-	background-color: rgba(50,22,22,.60);
-	color: white;
-		padding: 20px;
+#innerMilwaukee h1 {
+  margin: 0;
+  transform: translateY(20px);
+  background-color: rgba(50, 22, 22, .60);
+  color: white;
+  padding: 20px;
 }
-
 #innerMilwaukee p {
   font-size: 20px;
-	right: 10px;
-	background-color: rgba(50,22,22,.60);
-	color: #fff;
-	padding: 20px;
-
+  right: 10px;
+  background-color: rgba(50, 22, 22, .60);
+  color: #fff;
+  padding: 20px;
 }
-
 @media only screen and (max-width: 700px) {
-	#innerProfile{
-		flex-direction: column;
-	}
-	#profileImg{
-		  margin-left: auto;
-  margin-right: auto;
-	}
-	#profileDesc{
-		width: 90%;
-		  margin-left: auto;
-  margin-right: auto;
-		transform: translateX(-25px);
-	}
+  #innerProfile {
+    flex-direction: column;
+  }
+  #profileImg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #profileDesc {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-25px);
+  }
 }
-
 #container2 {
   height: auto;
   background-color: #131313;
@@ -99,12 +94,12 @@
 #innerProfile {
   display: flex;
   width: 75%;
-	max-width: 700px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
   align-content: center;
-	padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 #profileDesc {
   width: 95%;
@@ -129,25 +124,26 @@
 }
 #explainer {
   font-family: 'Raleway', sans-serif;
-	background-color: #131314;
-	padding-top: 25px;
-
+  background-color: #131314;
+  padding-top: 25px;
 }
 #explainer h1 {
-font-size: 26px;
-		text-transform:uppercase;
-	color: #fff;
-	margin: 0;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-weight: 500
 }
 #explainer p {
   width: 80%;
   max-width: 600px;
-	color: #fff;
+  color: #fff;
 }
 #explainer img {
   width: 85%;
   max-width: 1000px;
-	border: 2px solid #fff;
-	border-radius: 15px;
-	margin: 25px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  margin: 25px;
 }
