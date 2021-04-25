@@ -26,7 +26,7 @@ button:hover {
 }
 #brand {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 25px;
@@ -60,6 +60,11 @@ button:hover {
 }
 #welcomeBanner img {
   width: 400px;
+}
+
+#welcomeBanner h4{
+	text-transform: uppercase;
+	font-weight: 400
 }
 .slider {
   width: 100%;
@@ -135,7 +140,7 @@ button:hover {
 }
 .caption {
   line-height: 100px;
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Raleway', sans-serif;
   color: black;
   position: relative;
@@ -145,6 +150,7 @@ button:hover {
   display: inline-block;
   position: relative;
   top: 7px;
+	transform: translateY(3px);
 
 }
 .text-box div {
@@ -409,12 +415,13 @@ button:hover {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
+ margin-left: auto;
+  margin-right: auto;
+	max-width: 1200px;
+	padding-right: 25px;
+	padding-left: 25px;
 }
 #innerDescContain {
-  display: flex;
-  justify-content: space-between;
   width: 97%;
   margin-left: auto;
   margin-right: auto;
@@ -422,18 +429,36 @@ button:hover {
   height: auto;
   padding-bottom: 25px;
 }
+#level1{
+	background-image: url("../images/2.png");
+	background-position: center;
+	background-size: cover;
+}
+#level2{
+	background-image: url("../images/8.png");
+	background-position: center;
+	background-size: cover;
+}
+#level3{
+	background-image: url("../images/Charming-Minimalist-Black-and-Grey-Living-Room.png");
+	background-position: center;
+	background-size: cover;
+}
+
 .savings {
-  width: 240px;
-  height: 275px;
+  width: 85%;
+  height: auto;
   border-radius: 10px;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  background: linear-gradient(209deg, rgba(130, 169, 208, 1) 0%, rgba(18,97,160, 1) 59%);
   color: #fff;
   box-shadow: 5px 5px 5px rgba(196, 144, 71, .75);
   position: relative;
-  display: flex;
+	 margin-left: auto;
+  margin-right: auto;
+	padding-bottom: 5px;
+	margin-bottom: 25px;
 }
 .savings h3 {
   font-family: 'Raleway', sans-serif;
@@ -442,15 +467,15 @@ button:hover {
   text-transform: uppercase;
   letter-spacing: 6px;
   margin: 0;
+	margin-bottom: 55px;
 }
 .savings p {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   max-width: 90%;
-  position: absolute;
   bottom: 0;
 }
 @media only screen and (max-width: 600px) {
@@ -485,34 +510,21 @@ button:hover {
     display: none;
   }
 }
-@media only screen and (max-width: 875px) and (min-width: 500px) {
-  .savings {
-    width: 70%;
-    height: 150px;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 @media only screen and (max-width: 875px) {
   #innerDescContain {
     display: inherit;
-  }
-  .savings {
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
   }
   #innerbanner {
     display: inherit;
     height: auto;
   }
   .caption {
-    width: 400px;
+    width: 600px;
     font-size: 40px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+	  transform: translateX(25px);
   }
   .talkBtn {
     width: 300px;

@@ -112,7 +112,7 @@ nav {
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-	padding-top: 8px;
+  padding-top: 8px;
 }
 #slideButton:hover {
   background-position: 100% 0;
@@ -127,15 +127,16 @@ nav {
 #footer {
   height: auto;
   width: 100%;
-  background-color: rgba(18,97,160,1.00);
+  background-color: rgba(18, 97, 160, 1.00);
 }
 #footerContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 500px;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  font-size: 15px;
 }
 #connect {
   display: flex;
@@ -157,9 +158,8 @@ nav {
   margin-right: auto;
 }
 .footerCol {
-  width: 200px;
+  width: auto;
   color: white;
-  margin-left: 20px;
 }
 #footer p {
   font-size: 14px;
@@ -237,13 +237,13 @@ ul {
   background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
   border-radius: 50px;
   display: flex;
-  box-shadow: 0px 5px 15px  rgba(0, 0, 0, .55);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, .55);
   background-size: 200% 100%;
   moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-	z-index: 20;
+  z-index: 20;
 }
 #messageContainer:hover {
   background-position: 100% 0;
@@ -288,8 +288,8 @@ ul {
   margin-top: 30px;
 }
 .overlay a {
-	padding-top: 20px;
-	padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-decoration: none;
   font-size: 18px;
   color: #fff;

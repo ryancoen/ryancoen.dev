@@ -15,5 +15,9 @@ function closeNav() {
 		
 function toggleNav() {
       nav ? closeNav() : openNav();
-    }		
-		
+    }
+
+function jump(){
+var scrollDiv = document.getElementById("option1").offsetTop;
+window.scrollTo({ top: scrollDiv -50, behavior: 'smooth'});
+}
