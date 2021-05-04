@@ -57,6 +57,7 @@
   width: 95%;
   max-width: 800px;
   justify-content: space-around;
+	align-items: center;
 }
 .service {
   height: auto;
