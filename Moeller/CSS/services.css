@@ -14,6 +14,8 @@
   font-weight: 500;
   text-transform: uppercase;
   color: white;
+	padding: 25px;
+	text-align: center;
 }
 .div-one {
   width: 100%;
@@ -50,7 +52,15 @@
 	.membershipCard{
 		margin-left: auto;
 		margin-right: auto;
-	}	
+	}
+	#innerContactBanner2{
+		flex-direction: column;
+		height: auto;
+	}
+	#contactBanner2{
+		height: auto;
+			padding-bottom: 25px;
+	}
 }
 .serviceDiv {
   display: flex;
@@ -75,12 +85,13 @@
   font-size: 40px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff;
+  color: #EDAD56;
   word-wrap: break-word;
   margin-top: 0;
 }
 .innerService {
   margin-right: 25px;
+	margin-left: 25px;
 	max-width: 300px;
   min-width: 300px;
 }
@@ -237,4 +248,72 @@
   max-width: 550px;
   min-width: 300px;
   text-transform: uppercase;
+}
+
+#HPA{
+	height: auto;
+	background: rgba(19,19,20,.1)
+}
+
+#innerHPA{
+	width:  75%;
+		margin-left: auto;
+	margin-right: auto;
+	  font-family: 'Raleway', sans-serif;
+	padding: 5px;
+	max-width: 700px;
+}
+
+#HPA h2{
+		color: black;
+}
+
+#contactBanner2{
+	background: rgba(19,19,20,.1)
+}
+
+#innerContactBanner2{
+	display: flex;
+		align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	width:  90%;
+	max-width: 700px;
+	justify-content: space-between;
+	padding: 0;
+	height: auto;
+
+}
+
+#contactBanner2 h2{
+		color: black;
+	font-size: 30px;
+}
+
+.btn2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  border-style: none;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(45deg, rgba(138, 101, 49, 1) 0%, rgba(255, 187, 92, 1) 100%);
+  width: 300px;
+  height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background-size: 200% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn2:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }

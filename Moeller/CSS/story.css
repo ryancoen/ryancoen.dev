@@ -60,7 +60,7 @@
   height: 200px;
   border-radius: 150px;
   border: 3px solid #C49047;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 #innerProfile {
   display: flex;
@@ -71,6 +71,7 @@
   justify-content: space-around;
   align-content: center;
   padding-bottom: 25px;
+	color: #EDAD56
 }
 #profileDesc {
   width: 95%;
@@ -96,9 +97,10 @@
 
 #innerAbout{
 	max-width: 800px;
-	min-width: 300px;
+	min-width: 270px;
 	margin-left: auto;
 	margin-right: auto;
+	width: 99%;
 }
 
 #aboutContainer{
