@@ -140,7 +140,7 @@ nav {
 }
 #connect {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 300px;
   margin-left: auto;
@@ -169,6 +169,7 @@ nav {
 h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+	font-size: 20px;
 }
 h2 {
   font-family: 'Raleway', sans-serif;
@@ -180,6 +181,7 @@ ul {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   padding: 0;
+	font-size: 18px
 }
 #logo2 {
   height: 80px;
@@ -329,4 +331,15 @@ ul {
   right: 0;
   text-align: center;
   opacity: 50%;
+}
+
+@media only screen and (max-width: 350px) {
+	#footerContainer{
+		flex-direction: column;
+	}
+	.footerCol{
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
 }

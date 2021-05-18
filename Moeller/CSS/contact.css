@@ -47,6 +47,7 @@ label {
 }
 #innerForm-group {
   display: flex;
+	justify-content: space-around;
 }
 .svcCol {
   width: 240px;
@@ -137,14 +138,15 @@ label {
 	#contactBottom p{
 		font-size: 15px
 	}
+	#innerForm-group{
+		flex-direction: column;
+		padding-left: 25px;
+	}
 }
 
 @media only screen and (max-width: 350px) {
 	.submit-button{
 		width: 200px;
-	}
-	#innerForm-group{
-		display: block;
 	}
 }
 
