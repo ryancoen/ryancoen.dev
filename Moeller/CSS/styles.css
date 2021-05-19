@@ -162,26 +162,32 @@ nav {
   color: white;
 }
 #footer p {
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Raleway', sans-serif;
   padding-bottom: 5px;
 }
+#footer h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+	color: #E5AF65;
+}
+
 h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-	font-size: 20px;
 }
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
 }
 ul {
   list-style-type: none;
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0;
-	font-size: 18px
+  font-size: 16px
 }
 #logo2 {
   height: 80px;
@@ -212,7 +218,6 @@ ul {
     transform: translateX(-10px);
   }
 }
-
 @media only screen and (min-width: 500px) {
   #smalllogo {
     display: none
@@ -332,14 +337,13 @@ ul {
   text-align: center;
   opacity: 50%;
 }
-
-@media only screen and (max-width: 350px) {
-	#footerContainer{
-		flex-direction: column;
-	}
-	.footerCol{
-		margin-left: auto;
-		margin-right: auto;
-		width: 80%;
-	}
+@media only screen and (max-width: 400px) {
+  #footerContainer {
+    flex-direction: column;
+  }
+  .footerCol {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
 }
