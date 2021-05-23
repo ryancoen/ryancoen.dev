@@ -72,4 +72,13 @@ width: 80%;
 .emptydiv{
 	height: 1000px;
 }
+
+#quote{
+	position: absolute;
+	left: 10px;
+	opacity: .2;
+	top: 10px;
+	max-height: 90%;
+	max-width: 100%;
+}
  
